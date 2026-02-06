@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Main Page - Jona's Spanish Flash{% endblock %}
+{% block title %}Main Page - Jona's Spanish Quiz{% endblock %}
 
 {% block content %}
 <div class="main-page">
@@ -11,6 +11,16 @@
                 <span class="button-icon">📚</span>
                 <span class="button-text">Conjugations Quiz</span>
                 <span class="button-description">Practice irregular Spanish verb conjugations</span>
+            </a>
+            <a href="{{ url_for('porpara_options') }}" class="quiz-button">
+                <span class="button-icon">🎯</span>
+                <span class="button-text">Por vs Para Quiz</span>
+                <span class="button-description">Practice choosing between por and para</span>
+            </a>
+            <a href="{{ url_for('vocab_options') }}" class="quiz-button">
+                <span class="button-icon">📖</span>
+                <span class="button-text">Vocabulary Quiz</span>
+                <span class="button-description">Train vocabulary with translations</span>
             </a>
         </div>
     </div>

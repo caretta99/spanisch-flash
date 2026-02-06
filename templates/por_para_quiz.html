@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Quiz - Jona's Spanish Quiz{% endblock %}
+{% block title %}Por vs Para Quiz - Jona's Spanish Quiz{% endblock %}
 
 {% block content %}
 <div class="quiz-page">
@@ -9,7 +9,7 @@
             Question <span id="question-num">{{ question_num }}</span> of <span id="total-questions">{{ total_questions }}</span>
         </div>
         <div class="quiz-actions">
-            <a href="{{ url_for('conjugations_options') }}" class="btn btn-secondary btn-small">Return to Options</a>
+            <a href="{{ url_for('porpara_options') }}" class="btn btn-secondary btn-small">Return to Options</a>
         </div>
     </div>
     
@@ -19,19 +19,14 @@
             <div class="contestant-name">{{ question.contestant }}</div>
             {% endif %}
             <div class="question-text">
-                <div class="verb-infinitive">{{ question.verb }}</div>
-                <div class="tense-person">
-                    <span class="tense">{{ question.tense }}</span>
-                    <span class="separator">•</span>
-                    <span class="person">{{ question.person }}</span>
-                </div>
+                <div class="sentence-text">{{ question.sentence }}</div>
             </div>
             <div class="timer" id="timer"></div>
         </div>
         
         <div id="answer-display" class="answer-display" style="display: none;">
             <div class="answer-label">Answer:</div>
-            <div class="answer-text">{{ question.answer }}</div>
+            <div class="answer-sentence">{{ question.sentence|replace('_____', '<span class="answer-highlight">' + question.answer + '</span>')|safe }}</div>
             <button id="skip-answer-button" class="btn btn-primary skip-answer-button" onclick="skipAnswer()" style="display: none;">Show next question</button>
         </div>
     </div>
@@ -41,7 +36,7 @@
     const secondsPerQuestion = {{ seconds_per_question }};
     const secondsPerAnswer = {{ seconds_per_answer }};
     const questionData = {{ question | tojson }};
-    window.quizType = 'conjugations';
+    window.quizType = 'porpara';
 </script>
 <script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
 {% endblock %}

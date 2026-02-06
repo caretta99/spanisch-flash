@@ -1,0 +1,311 @@
+{
+  "vocab_sets": {
+    "por_para": [
+      {
+        "spanish": "libertad",
+        "german": "Freiheit",
+        "english": "freedom"
+      },
+      {
+        "spanish": "candidato",
+        "german": "Kandidat",
+        "english": "candidate"
+      },
+      {
+        "spanish": "aumento",
+        "german": "Anstieg",
+        "english": "increase"
+      },
+      {
+        "spanish": "arquitecto",
+        "german": "Architekt",
+        "english": "architect"
+      },
+      {
+        "spanish": "escultura",
+        "german": "Skulptur",
+        "english": "sculpture"
+      },
+      {
+        "spanish": "sinfonía",
+        "german": "Sinfonie",
+        "english": "symphony"
+      },
+      {
+        "spanish": "congreso",
+        "german": "Kongress",
+        "english": "congress"
+      },
+      {
+        "spanish": "ampliar",
+        "german": "erweitern",
+        "english": "to expand"
+      },
+      {
+        "spanish": "conocimientos",
+        "german": "Kenntnisse",
+        "english": "knowledge"
+      },
+      {
+        "spanish": "sobrino",
+        "german": "Neffe",
+        "english": "nephew"
+      },
+      {
+        "spanish": "collar",
+        "german": "Halskette",
+        "english": "necklace"
+      },
+      {
+        "spanish": "competencia",
+        "german": "Wettbewerb",
+        "english": "competition"
+      },
+      {
+        "spanish": "ascenso",
+        "german": "Beförderung",
+        "english": "promotion"
+      },
+      {
+        "spanish": "técnica",
+        "german": "Technik",
+        "english": "technique"
+      },
+      {
+        "spanish": "periodista",
+        "german": "Journalist",
+        "english": "journalist"
+      },
+      {
+        "spanish": "orquesta",
+        "german": "Orchester",
+        "english": "orchestra"
+      },
+      {
+        "spanish": "artista",
+        "german": "Künstler",
+        "english": "artist"
+      },
+      {
+        "spanish": "presidente",
+        "german": "Präsident",
+        "english": "president"
+      },
+      {
+        "spanish": "estudiante",
+        "german": "Student",
+        "english": "student"
+      },
+      {
+        "spanish": "abogado",
+        "german": "Anwalt",
+        "english": "lawyer"
+      },
+      {
+        "spanish": "doctor",
+        "german": "Arzt",
+        "english": "doctor"
+      },
+      {
+        "spanish": "médico",
+        "german": "Arzt",
+        "english": "doctor"
+      },
+      {
+        "spanish": "músico",
+        "german": "Musiker",
+        "english": "musician"
+      },
+      {
+        "spanish": "actor",
+        "german": "Schauspieler",
+        "english": "actor"
+      },
+      {
+        "spanish": "poeta",
+        "german": "Dichter",
+        "english": "poet"
+      },
+      {
+        "spanish": "diseñar",
+        "german": "entwerfen",
+        "english": "to design"
+      },
+      {
+        "spanish": "representar",
+        "german": "darstellen",
+        "english": "to represent"
+      },
+      {
+        "spanish": "interpretar",
+        "german": "interpretieren",
+        "english": "to interpret"
+      },
+      {
+        "spanish": "publicar",
+        "german": "veröffentlichen",
+        "english": "to publish"
+      },
+      {
+        "spanish": "crear",
+        "german": "erschaffen",
+        "english": "to create"
+      },
+      {
+        "spanish": "firmar",
+        "german": "unterschreiben",
+        "english": "to sign"
+      },
+      {
+        "spanish": "aprobar",
+        "german": "genehmigen",
+        "english": "to approve"
+      },
+      {
+        "spanish": "escribir",
+        "german": "schreiben",
+        "english": "to write"
+      },
+      {
+        "spanish": "componer",
+        "german": "komponieren",
+        "english": "to compose"
+      },
+      {
+        "spanish": "pintar",
+        "german": "malen",
+        "english": "to paint"
+      },
+      {
+        "spanish": "dirigir",
+        "german": "regieren",
+        "english": "to direct"
+      },
+      {
+        "spanish": "disculparse",
+        "german": "sich entschuldigen",
+        "english": "to apologize"
+      },
+      {
+        "spanish": "llorar",
+        "german": "weinen",
+        "english": "to cry"
+      },
+      {
+        "spanish": "alegrar",
+        "german": "erfreuen",
+        "english": "to make happy"
+      },
+      {
+        "spanish": "preocuparse",
+        "german": "sich sorgen",
+        "english": "to worry"
+      },
+      {
+        "spanish": "protestar",
+        "german": "protestieren",
+        "english": "to protest"
+      },
+      {
+        "spanish": "votar",
+        "german": "wählen",
+        "english": "to vote"
+      },
+      {
+        "spanish": "luchar",
+        "german": "kämpfen",
+        "english": "to fight"
+      },
+      {
+        "spanish": "ayuda",
+        "german": "Hilfe",
+        "english": "help"
+      },
+      {
+        "spanish": "pérdida",
+        "german": "Verlust",
+        "english": "loss"
+      },
+      {
+        "spanish": "noticia",
+        "german": "Nachricht",
+        "english": "news"
+      },
+      {
+        "spanish": "salud",
+        "german": "Gesundheit",
+        "english": "health"
+      },
+      {
+        "spanish": "medicina",
+        "german": "Medizin",
+        "english": "medicine"
+      },
+      {
+        "spanish": "demás",
+        "german": "übrige",
+        "english": "others"
+      },
+      {
+        "spanish": "ganar",
+        "german": "gewinnen",
+        "english": "to win"
+      },
+      {
+        "spanish": "conseguir",
+        "german": "erreichen",
+        "english": "to achieve"
+      },
+      {
+        "spanish": "mejorar",
+        "german": "verbessern",
+        "english": "to improve"
+      },
+      {
+        "spanish": "mantenerse",
+        "german": "sich halten",
+        "english": "to maintain oneself"
+      },
+      {
+        "spanish": "aeropuerto",
+        "german": "Flughafen",
+        "english": "airport"
+      },
+      {
+        "spanish": "restaurante",
+        "german": "Restaurant",
+        "english": "restaurant"
+      },
+      {
+        "spanish": "montaña",
+        "german": "Berg",
+        "english": "mountain"
+      },
+      {
+        "spanish": "verano",
+        "german": "Sommer",
+        "english": "summer"
+      },
+      {
+        "spanish": "correo electrónico",
+        "german": "E-Mail",
+        "english": "email"
+      },
+      {
+        "spanish": "videollamada",
+        "german": "Videotelefonie",
+        "english": "video call"
+      },
+      {
+        "spanish": "redes sociales",
+        "german": "soziale Medien",
+        "english": "social media"
+      },
+      {
+        "spanish": "centro histórico",
+        "german": "historisches Zentrum",
+        "english": "historic center"
+      }
+    ]
+  }
+}

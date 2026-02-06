@@ -1,27 +1,27 @@
 {% extends "base.html" %}
 
-{% block title %}Quiz Options - Jona's Spanish Quiz{% endblock %}
+{% block title %}Por vs Para Quiz Options - Jona's Spanish Quiz{% endblock %}
 
 {% block content %}
 <div class="options-page">
-    <h2>Conjugations Quiz Options</h2>
+    <h2>Por vs Para Quiz Options</h2>
     
-    <form method="POST" action="{{ url_for('start_quiz') }}" class="options-form">
+    <form method="POST" action="{{ url_for('porpara_start_quiz') }}" class="options-form">
         <div class="form-sections-grid">
             <div class="form-section">
                 <div class="section-header">
-                    <h3>Select Verbs</h3>
+                    <h3>Select Por Categories</h3>
                     <div class="select-all-buttons">
-                        <button type="button" class="btn btn-small btn-select-all" onclick="selectAllVerbs()">Select All</button>
-                        <button type="button" class="btn btn-small btn-deselect-all" onclick="deselectAllVerbs()">Deselect All</button>
+                        <button type="button" class="btn btn-small btn-select-all" onclick="selectAllPor()">Select All</button>
+                        <button type="button" class="btn btn-small btn-deselect-all" onclick="deselectAllPor()">Deselect All</button>
                     </div>
                 </div>
-                <div class="checkbox-group verbs">
-                    {% for verb in verbs %}
+                <div class="checkbox-group por-categories">
+                    {% for category_key, category_name in por_categories.items() %}
                     <label class="checkbox-label">
-                        <input type="checkbox" name="verbs" value="{{ verb }}" 
-                               {% if verb in saved_prefs.selected_verbs %}checked{% endif %}>
-                        <span>{{ verb }}</span>
+                        <input type="checkbox" name="por_categories" value="{{ category_key }}" 
+                               {% if category_key in saved_prefs.selected_por_categories %}checked{% endif %}>
+                        <span>{{ category_name }}</span>
                     </label>
                     {% endfor %}
                 </div>
@@ -29,18 +29,18 @@
             
             <div class="form-section">
                 <div class="section-header">
-                    <h3>Select Tenses</h3>
+                    <h3>Select Para Categories</h3>
                     <div class="select-all-buttons">
-                        <button type="button" class="btn btn-small btn-select-all" onclick="selectAllTenses()">Select All</button>
-                        <button type="button" class="btn btn-small btn-deselect-all" onclick="deselectAllTenses()">Deselect All</button>
+                        <button type="button" class="btn btn-small btn-select-all" onclick="selectAllPara()">Select All</button>
+                        <button type="button" class="btn btn-small btn-deselect-all" onclick="deselectAllPara()">Deselect All</button>
                     </div>
                 </div>
-                <div class="checkbox-group tenses">
-                    {% for tense in tenses %}
+                <div class="checkbox-group para-categories">
+                    {% for category_key, category_name in para_categories.items() %}
                     <label class="checkbox-label">
-                        <input type="checkbox" name="tenses" value="{{ tense }}" 
-                               {% if tense in saved_prefs.selected_tenses %}checked{% endif %}>
-                        <span>{{ tense }}</span>
+                        <input type="checkbox" name="para_categories" value="{{ category_key }}" 
+                               {% if category_key in saved_prefs.selected_para_categories %}checked{% endif %}>
+                        <span>{{ category_name }}</span>
                     </label>
                     {% endfor %}
                 </div>
@@ -108,23 +108,23 @@
 </div>
 
 <script>
-function selectAllVerbs() {
-    const checkboxes = document.querySelectorAll('input[name="verbs"]');
+function selectAllPor() {
+    const checkboxes = document.querySelectorAll('input[name="por_categories"]');
     checkboxes.forEach(checkbox => checkbox.checked = true);
 }
 
-function deselectAllVerbs() {
-    const checkboxes = document.querySelectorAll('input[name="verbs"]');
+function deselectAllPor() {
+    const checkboxes = document.querySelectorAll('input[name="por_categories"]');
     checkboxes.forEach(checkbox => checkbox.checked = false);
 }
 
-function selectAllTenses() {
-    const checkboxes = document.querySelectorAll('input[name="tenses"]');
+function selectAllPara() {
+    const checkboxes = document.querySelectorAll('input[name="para_categories"]');
     checkboxes.forEach(checkbox => checkbox.checked = true);
 }
 
-function deselectAllTenses() {
-    const checkboxes = document.querySelectorAll('input[name="tenses"]');
+function deselectAllPara() {
+    const checkboxes = document.querySelectorAll('input[name="para_categories"]');
     checkboxes.forEach(checkbox => checkbox.checked = false);
 }
 
@@ -159,11 +159,6 @@ function updateRemoveButtons() {
     });
 }
 
-// Initialize remove buttons on page load
-document.addEventListener('DOMContentLoaded', () => {
-    updateRemoveButtons();
-});
-
 function saveAndReturnToMain() {
     // Create a form to submit settings
     const form = document.querySelector('.options-form');
@@ -172,7 +167,7 @@ function saveAndReturnToMain() {
     // Create a temporary form to submit
     const tempForm = document.createElement('form');
     tempForm.method = 'POST';
-    tempForm.action = '{{ url_for("save_settings") }}';
+    tempForm.action = '{{ url_for("porpara_save_settings") }}';
     
     // Collect all unique keys first to avoid duplicates
     const processedKeys = new Set();
@@ -211,5 +206,10 @@ function saveAndReturnToMain() {
     document.body.appendChild(tempForm);
     tempForm.submit();
 }
+
+// Initialize remove buttons on page load
+document.addEventListener('DOMContentLoaded', () => {
+    updateRemoveButtons();
+});
 </script>
 {% endblock %}

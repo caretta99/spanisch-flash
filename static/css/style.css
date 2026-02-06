@@ -1,4 +1,4 @@
-/* Modern, spacious design for Jona's Spanish Flash */
+/* Modern, spacious design for Jona's Spanish Quiz */
 
 * {
     margin: 0;
@@ -85,7 +85,7 @@ footer {
 
 .quiz-selection {
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
 }
 
 .quiz-selection h2 {
@@ -96,8 +96,8 @@ footer {
 }
 
 .quiz-buttons {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
@@ -251,6 +251,65 @@ footer {
 
 .checkbox-group.tenses {
     grid-template-columns: repeat(2, 1fr);
+}
+
+.checkbox-group.por-categories {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.checkbox-group.para-categories {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.checkbox-group.vocab-sets {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.radio-label:hover {
+    background-color: rgba(37, 99, 235, 0.05);
+}
+
+.radio-label input[type="radio"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+.translation-note {
+    background-color: rgba(37, 99, 235, 0.05);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.translation-note p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.translation-note p:first-child {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
 .checkbox-label {
@@ -498,6 +557,23 @@ footer {
     text-transform: capitalize;
 }
 
+.sentence-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    padding: 1rem;
+}
+
+.vocab-word {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
 .tense-person {
     font-size: 1.5rem;
     color: var(--text-secondary);
@@ -555,6 +631,26 @@ footer {
     text-transform: capitalize;
 }
 
+.answer-sentence {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.4;
+    padding: 1rem;
+}
+
+.answer-highlight {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.skip-answer-button {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -590,6 +686,18 @@ footer {
         grid-template-columns: 1fr;
     }
     
+    .checkbox-group.por-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .checkbox-group.para-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .checkbox-group.vocab-sets {
+        grid-template-columns: 1fr;
+    }
+    
     .form-section .input-group {
         flex-direction: column !important;
     }
@@ -614,6 +722,18 @@ footer {
     
     .verb-infinitive {
         font-size: 2.5rem;
+    }
+    
+    .sentence-text {
+        font-size: 1.5rem;
+    }
+    
+    .vocab-word {
+        font-size: 2.5rem;
+    }
+    
+    .answer-sentence {
+        font-size: 1.5rem;
     }
     
     .answer-text {

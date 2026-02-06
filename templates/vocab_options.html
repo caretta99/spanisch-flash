@@ -1,48 +1,59 @@
 {% extends "base.html" %}
 
-{% block title %}Quiz Options - Jona's Spanish Quiz{% endblock %}
+{% block title %}Vocabulary Quiz Options - Jona's Spanish Quiz{% endblock %}
 
 {% block content %}
 <div class="options-page">
-    <h2>Conjugations Quiz Options</h2>
+    <h2>Vocabulary Quiz Options</h2>
     
-    <form method="POST" action="{{ url_for('start_quiz') }}" class="options-form">
+    <form method="POST" action="{{ url_for('vocab_start_quiz') }}" class="options-form">
         <div class="form-sections-grid">
             <div class="form-section">
                 <div class="section-header">
-                    <h3>Select Verbs</h3>
+                    <h3>Select Vocabulary Sets</h3>
                     <div class="select-all-buttons">
-                        <button type="button" class="btn btn-small btn-select-all" onclick="selectAllVerbs()">Select All</button>
-                        <button type="button" class="btn btn-small btn-deselect-all" onclick="deselectAllVerbs()">Deselect All</button>
+                        <button type="button" class="btn btn-small btn-select-all" onclick="selectAllVocabSets()">Select All</button>
+                        <button type="button" class="btn btn-small btn-deselect-all" onclick="deselectAllVocabSets()">Deselect All</button>
                     </div>
                 </div>
-                <div class="checkbox-group verbs">
-                    {% for verb in verbs %}
+                <div class="checkbox-group vocab-sets">
+                    {% for set_key, set_name, word_count in vocab_sets %}
                     <label class="checkbox-label">
-                        <input type="checkbox" name="verbs" value="{{ verb }}" 
-                               {% if verb in saved_prefs.selected_verbs %}checked{% endif %}>
-                        <span>{{ verb }}</span>
+                        <input type="checkbox" name="vocab_sets" value="{{ set_key }}" 
+                               {% if set_key in saved_prefs.selected_vocab_sets %}checked{% endif %}>
+                        <span>{{ set_name }} ({{ word_count }})</span>
                     </label>
                     {% endfor %}
                 </div>
             </div>
             
             <div class="form-section">
-                <div class="section-header">
-                    <h3>Select Tenses</h3>
-                    <div class="select-all-buttons">
-                        <button type="button" class="btn btn-small btn-select-all" onclick="selectAllTenses()">Select All</button>
-                        <button type="button" class="btn btn-small btn-deselect-all" onclick="deselectAllTenses()">Deselect All</button>
-                    </div>
+                <h3>Translation Direction</h3>
+                <div class="translation-note">
+                    <p><strong>Note / Hinweis:</strong></p>
+                    <p>Translations are in the context of their usage, not general. / Übersetzungen sind im Kontext ihrer Verwendung, nicht allgemein.</p>
                 </div>
-                <div class="checkbox-group tenses">
-                    {% for tense in tenses %}
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="tenses" value="{{ tense }}" 
-                               {% if tense in saved_prefs.selected_tenses %}checked{% endif %}>
-                        <span>{{ tense }}</span>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="direction" value="spanish_to_german" 
+                               {% if saved_prefs.direction == 'spanish_to_german' %}checked{% endif %}>
+                        <span>Spanish → German</span>
                     </label>
-                    {% endfor %}
+                    <label class="radio-label">
+                        <input type="radio" name="direction" value="spanish_to_english" 
+                               {% if saved_prefs.direction == 'spanish_to_english' %}checked{% endif %}>
+                        <span>Spanish → English</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="direction" value="german_to_spanish" 
+                               {% if saved_prefs.direction == 'german_to_spanish' %}checked{% endif %}>
+                        <span>German → Spanish</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="direction" value="english_to_spanish" 
+                               {% if saved_prefs.direction == 'english_to_spanish' %}checked{% endif %}>
+                        <span>English → Spanish</span>
+                    </label>
                 </div>
             </div>
             
@@ -108,23 +119,13 @@
 </div>
 
 <script>
-function selectAllVerbs() {
-    const checkboxes = document.querySelectorAll('input[name="verbs"]');
+function selectAllVocabSets() {
+    const checkboxes = document.querySelectorAll('input[name="vocab_sets"]');
     checkboxes.forEach(checkbox => checkbox.checked = true);
 }
 
-function deselectAllVerbs() {
-    const checkboxes = document.querySelectorAll('input[name="verbs"]');
-    checkboxes.forEach(checkbox => checkbox.checked = false);
-}
-
-function selectAllTenses() {
-    const checkboxes = document.querySelectorAll('input[name="tenses"]');
-    checkboxes.forEach(checkbox => checkbox.checked = true);
-}
-
-function deselectAllTenses() {
-    const checkboxes = document.querySelectorAll('input[name="tenses"]');
+function deselectAllVocabSets() {
+    const checkboxes = document.querySelectorAll('input[name="vocab_sets"]');
     checkboxes.forEach(checkbox => checkbox.checked = false);
 }
 
@@ -159,38 +160,26 @@ function updateRemoveButtons() {
     });
 }
 
-// Initialize remove buttons on page load
-document.addEventListener('DOMContentLoaded', () => {
-    updateRemoveButtons();
-});
-
 function saveAndReturnToMain() {
-    // Create a form to submit settings
     const form = document.querySelector('.options-form');
     const formData = new FormData(form);
     
-    // Create a temporary form to submit
     const tempForm = document.createElement('form');
     tempForm.method = 'POST';
-    tempForm.action = '{{ url_for("save_settings") }}';
+    tempForm.action = '{{ url_for("vocab_save_settings") }}';
     
-    // Collect all unique keys first to avoid duplicates
     const processedKeys = new Set();
     
-    // Copy all form data
     for (const [key, value] of formData.entries()) {
-        // Skip if we've already processed this key
         if (processedKeys.has(key)) {
             continue;
         }
         
         processedKeys.add(key);
         
-        // Get all values for this key
         const allValues = formData.getAll(key);
         
         if (allValues.length > 1) {
-            // Multiple values (checkboxes, contestants, etc.)
             allValues.forEach(val => {
                 const input = document.createElement('input');
                 input.type = 'hidden';
@@ -199,7 +188,6 @@ function saveAndReturnToMain() {
                 tempForm.appendChild(input);
             });
         } else {
-            // Single value
             const input = document.createElement('input');
             input.type = 'hidden';
             input.name = key;
@@ -211,5 +199,9 @@ function saveAndReturnToMain() {
     document.body.appendChild(tempForm);
     tempForm.submit();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateRemoveButtons();
+});
 </script>
 {% endblock %}
