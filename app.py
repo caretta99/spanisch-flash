@@ -16,6 +16,26 @@ def index():
     """Main page with quiz selection"""
     return render_template('index.html')
 
+@app.route('/quiz/conjugations/save-settings', methods=['POST'])
+def save_settings():
+    """Save user settings without starting quiz"""
+    selected_verbs = request.form.getlist('verbs')
+    selected_tenses = request.form.getlist('tenses')
+    seconds_per_question = int(request.form.get('seconds_per_question', 3))
+    num_questions = int(request.form.get('num_questions', 10))
+    
+    # Get contestant names (filter out empty strings)
+    contestant_names = [name.strip() for name in request.form.getlist('contestants') if name.strip()]
+    
+    # Save preferences to session
+    session['saved_verbs'] = selected_verbs
+    session['saved_tenses'] = selected_tenses
+    session['saved_seconds_per_question'] = seconds_per_question
+    session['saved_num_questions'] = num_questions
+    session['saved_contestants'] = contestant_names
+    
+    return redirect(url_for('index'))
+
 @app.route('/quiz/conjugations/options')
 def conjugations_options():
     """Options page for conjugations quiz"""

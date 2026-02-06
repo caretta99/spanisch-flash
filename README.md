@@ -1,4 +1,4 @@
-# Spanisch Flash - Spanish Verb Conjugation Quiz
+# Jona's Spanish Flash - Spanish Verb Conjugation Quiz
 
 A Flask web application for practicing Spanish verb conjugations through interactive flashcard-style quizzes.
 
