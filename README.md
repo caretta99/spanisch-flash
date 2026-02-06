@@ -8,6 +8,22 @@ A Flask web application for practicing Spanish verb conjugations through interac
 - **Customizable Options**: Choose specific verbs, tenses, timing, and number of questions
 - **Flashcard Style**: Questions displayed for a set time, followed by answers
 - **Data Validation**: Ensures consistency across all verb conjugations
+- **Contest Mode**: Assign questions to multiple contestants for competitive practice
+- **Responsive Design**: Optimized for both desktop and mobile devices
+
+## Screenshots
+
+### Main Page
+![Main Page](docs/screenshot_mainpage.png)
+
+### Options Page
+![Options Page](docs/screenshot_conjugations_options.png)
+
+### Quiz - Question Display
+![Quiz Question](docs/screenshot_conjugations_question.png)
+
+### Quiz - Answer Display
+![Quiz Answer](docs/screenshot_conjugations_answer.png)
 
 ## Project Structure
 
@@ -64,18 +80,28 @@ python app.py
 
 ## Usage
 
-1. **Main Page**: Select the quiz type you want to practice (currently: Conjugations Quiz)
-2. **Options Page**: 
-   - Choose which irregular verbs to practice
-   - Select which tenses to include
-   - Set the number of seconds per question (default: 4 seconds)
-   - Set the total number of questions (default: 10)
-   - Click "Start Quiz" to begin
-3. **Quiz Page**: 
-   - Each question displays the verb infinitive, tense, and person
-   - After the set time, the correct answer is shown for 5 seconds
-   - The quiz automatically advances to the next question
-   - After completing all questions, you'll return to the options page
+### 1. Main Page
+Select the quiz type you want to practice (currently: Conjugations Quiz).
+
+### 2. Options Page
+Configure your quiz preferences:
+- Choose which irregular verbs to practice (select/deselect all buttons available)
+- Select which tenses to include (select/deselect all buttons available)
+- **Contest Mode (Optional)**: Add contestant names to assign questions to specific players
+- Set the number of seconds per question (default: 3 seconds)
+- Set the total number of questions (default: 10)
+- Click "Start Quiz" to begin, or "Return to Main" to save settings and go back
+
+Your settings are automatically saved and will be restored when you return to the options page.
+
+### 3. Quiz Page
+- Each question displays the verb infinitive, tense, and person
+- In contest mode, the assigned contestant name is shown above the question
+- A countdown timer shows the remaining time
+- After the set time, the correct answer is displayed for 4 seconds
+- The quiz automatically advances to the next question
+- Use "Return to Options" button to exit the quiz early
+- After completing all questions, you'll return to the options page with your settings preserved
 
 ## Data Structure
 
