@@ -107,4 +107,4 @@ The application includes data validation that runs on startup to ensure:
 
 ## License
 
-[Add your license here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

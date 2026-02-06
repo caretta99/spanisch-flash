@@ -3,6 +3,7 @@ name = "spanisch-flash"
 version = "0.1.0"
 description = "Spanish verb conjugation quiz Flask application"
 requires-python = ">=3.10"
+license = {text = "MIT"}
 dependencies = [
     "flask>=3.0.0",
 ]
