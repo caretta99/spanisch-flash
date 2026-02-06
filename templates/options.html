@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz Options - Spanisch Flash{% endblock %}
+
+{% block content %}
+<div class="options-page">
+    <h2>Conjugations Quiz Options</h2>
+    
+    <form method="POST" action="{{ url_for('start_quiz') }}" class="options-form">
+        <div class="form-section">
+            <div class="section-header">
+                <h3>Select Verbs</h3>
+                <div class="select-all-buttons">
+                    <button type="button" class="btn btn-small btn-select-all" onclick="selectAllVerbs()">Select All</button>
+                    <button type="button" class="btn btn-small btn-deselect-all" onclick="deselectAllVerbs()">Deselect All</button>
+                </div>
+            </div>
+            <div class="checkbox-group verbs">
+                {% for verb in verbs %}
+                <label class="checkbox-label">
+                    <input type="checkbox" name="verbs" value="{{ verb }}" checked>
+                    <span>{{ verb }}</span>
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <div class="section-header">
+                <h3>Select Tenses</h3>
+                <div class="select-all-buttons">
+                    <button type="button" class="btn btn-small btn-select-all" onclick="selectAllTenses()">Select All</button>
+                    <button type="button" class="btn btn-small btn-deselect-all" onclick="deselectAllTenses()">Deselect All</button>
+                </div>
+            </div>
+            <div class="checkbox-group tenses">
+                {% for tense in tenses %}
+                <label class="checkbox-label">
+                    <input type="checkbox" name="tenses" value="{{ tense }}" checked>
+                    <span>{{ tense }}</span>
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h3>Contest Mode (Optional)</h3>
+            <div class="contestant-section">
+                <div class="contestant-header">
+                    <label>Contestant Names:</label>
+                    <div class="contestant-buttons">
+                        <button type="button" class="btn btn-small btn-select-all" onclick="addContestantBox()">Add Contestant</button>
+                    </div>
+                </div>
+                <div id="contestant-inputs" class="contestant-inputs">
+                    <div class="contestant-input-wrapper">
+                        <input type="text" name="contestants" class="contestant-input" placeholder="Contestant 1">
+                        <button type="button" class="btn-remove-contestant" onclick="removeContestantBox(this)" style="display: none;">×</button>
+                    </div>
+                    <div class="contestant-input-wrapper">
+                        <input type="text" name="contestants" class="contestant-input" placeholder="Contestant 2">
+                        <button type="button" class="btn-remove-contestant" onclick="removeContestantBox(this)" style="display: none;">×</button>
+                    </div>
+                </div>
+                <p class="contestant-hint">Leave empty to disable contest mode</p>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h3>Quiz Settings</h3>
+            <div class="input-group">
+                <label for="seconds_per_question">Seconds per question:</label>
+                <input type="number" id="seconds_per_question" name="seconds_per_question" 
+                       value="3" min="1" max="60" required>
+            </div>
+            <div class="input-group">
+                <label for="num_questions">Number of questions:</label>
+                <input type="number" id="num_questions" name="num_questions" 
+                       value="10" min="1" max="100" required>
+            </div>
+        </div>
+        
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Start Quiz</button>
+            <a href="{{ url_for('index') }}" class="btn btn-secondary">Return to Main</a>
+        </div>
+    </form>
+</div>
+
+<script>
+function selectAllVerbs() {
+    const checkboxes = document.querySelectorAll('input[name="verbs"]');
+    checkboxes.forEach(checkbox => checkbox.checked = true);
+}
+
+function deselectAllVerbs() {
+    const checkboxes = document.querySelectorAll('input[name="verbs"]');
+    checkboxes.forEach(checkbox => checkbox.checked = false);
+}
+
+function selectAllTenses() {
+    const checkboxes = document.querySelectorAll('input[name="tenses"]');
+    checkboxes.forEach(checkbox => checkbox.checked = true);
+}
+
+function deselectAllTenses() {
+    const checkboxes = document.querySelectorAll('input[name="tenses"]');
+    checkboxes.forEach(checkbox => checkbox.checked = false);
+}
+
+let contestantCounter = 2;
+
+function addContestantBox() {
+    contestantCounter++;
+    const container = document.getElementById('contestant-inputs');
+    const wrapper = document.createElement('div');
+    wrapper.className = 'contestant-input-wrapper';
+    wrapper.innerHTML = `
+        <input type="text" name="contestants" class="contestant-input" placeholder="Contestant ${contestantCounter}">
+        <button type="button" class="btn-remove-contestant" onclick="removeContestantBox(this)">×</button>
+    `;
+    container.appendChild(wrapper);
+    updateRemoveButtons();
+}
+
+function removeContestantBox(button) {
+    const container = document.getElementById('contestant-inputs');
+    if (container.children.length > 2) {
+        button.parentElement.remove();
+        updateRemoveButtons();
+    }
+}
+
+function updateRemoveButtons() {
+    const container = document.getElementById('contestant-inputs');
+    const removeButtons = container.querySelectorAll('.btn-remove-contestant');
+    removeButtons.forEach(btn => {
+        btn.style.display = container.children.length > 2 ? 'block' : 'none';
+    });
+}
+
+// Initialize remove buttons on page load
+document.addEventListener('DOMContentLoaded', () => {
+    updateRemoveButtons();
+});
+</script>
+{% endblock %}

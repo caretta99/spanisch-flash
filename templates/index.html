@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Main Page - Spanisch Flash{% endblock %}
+
+{% block content %}
+<div class="main-page">
+    <div class="quiz-selection">
+        <h2>Choose a Quiz</h2>
+        <div class="quiz-buttons">
+            <a href="{{ url_for('conjugations_options') }}" class="quiz-button">
+                <span class="button-icon">📚</span>
+                <span class="button-text">Conjugations Quiz</span>
+                <span class="button-description">Practice irregular Spanish verb conjugations</span>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

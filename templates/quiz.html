@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz - Spanisch Flash{% endblock %}
+
+{% block content %}
+<div class="quiz-page">
+    <div class="quiz-header">
+        <div class="question-counter">
+            Question <span id="question-num">{{ question_num }}</span> of <span id="total-questions">{{ total_questions }}</span>
+        </div>
+        <div class="quiz-actions">
+            <a href="{{ url_for('conjugations_options') }}" class="btn btn-secondary btn-small">Return to Options</a>
+        </div>
+    </div>
+    
+    <div class="quiz-content">
+        <div id="question-display" class="question-display">
+            {% if contest_mode and question.contestant %}
+            <div class="contestant-name">{{ question.contestant }}</div>
+            {% endif %}
+            <div class="question-text">
+                <div class="verb-infinitive">{{ question.verb }}</div>
+                <div class="tense-person">
+                    <span class="tense">{{ question.tense }}</span>
+                    <span class="separator">•</span>
+                    <span class="person">{{ question.person }}</span>
+                </div>
+            </div>
+            <div class="timer" id="timer"></div>
+        </div>
+        
+        <div id="answer-display" class="answer-display" style="display: none;">
+            <div class="answer-label">Answer:</div>
+            <div class="answer-text">{{ question.answer }}</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const secondsPerQuestion = {{ seconds_per_question }};
+    const questionData = {{ question | tojson }};
+</script>
+<script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+{% endblock %}

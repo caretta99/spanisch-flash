@@ -1,0 +1,1192 @@
+{
+  "conjugations_quiz": {
+    "ser": {
+      "presente": {
+        "yo": "soy",
+        "tu": "eres",
+        "el/ella/usted": "es",
+        "nosotros": "somos",
+        "vosotros": "sois",
+        "ellos/ellas/ustedes": "son"
+      },
+      "pretérito": {
+        "yo": "fui",
+        "tu": "fuiste",
+        "el/ella/usted": "fue",
+        "nosotros": "fuimos",
+        "vosotros": "fuisteis",
+        "ellos/ellas/ustedes": "fueron"
+      },
+      "imperfecto": {
+        "yo": "era",
+        "tu": "eras",
+        "el/ella/usted": "era",
+        "nosotros": "éramos",
+        "vosotros": "erais",
+        "ellos/ellas/ustedes": "eran"
+      },
+      "futuro": {
+        "yo": "seré",
+        "tu": "serás",
+        "el/ella/usted": "será",
+        "nosotros": "seremos",
+        "vosotros": "seréis",
+        "ellos/ellas/ustedes": "serán"
+      },
+      "condicional": {
+        "yo": "sería",
+        "tu": "serías",
+        "el/ella/usted": "sería",
+        "nosotros": "seríamos",
+        "vosotros": "seríais",
+        "ellos/ellas/ustedes": "serían"
+      },
+      "subjuntivo_presente": {
+        "yo": "sea",
+        "tu": "seas",
+        "el/ella/usted": "sea",
+        "nosotros": "seamos",
+        "vosotros": "seáis",
+        "ellos/ellas/ustedes": "sean"
+      },
+      "pretérito_perfecto": {
+        "yo": "he sido",
+        "tu": "has sido",
+        "el/ella/usted": "ha sido",
+        "nosotros": "hemos sido",
+        "vosotros": "habéis sido",
+        "ellos/ellas/ustedes": "han sido"
+      },
+      "pluscuamperfecto": {
+        "yo": "había sido",
+        "tu": "habías sido",
+        "el/ella/usted": "había sido",
+        "nosotros": "habíamos sido",
+        "vosotros": "habíais sido",
+        "ellos/ellas/ustedes": "habían sido"
+      }
+    },
+    "estar": {
+      "presente": {
+        "yo": "estoy",
+        "tu": "estás",
+        "el/ella/usted": "está",
+        "nosotros": "estamos",
+        "vosotros": "estáis",
+        "ellos/ellas/ustedes": "están"
+      },
+      "pretérito": {
+        "yo": "estuve",
+        "tu": "estuviste",
+        "el/ella/usted": "estuvo",
+        "nosotros": "estuvimos",
+        "vosotros": "estuvisteis",
+        "ellos/ellas/ustedes": "estuvieron"
+      },
+      "imperfecto": {
+        "yo": "estaba",
+        "tu": "estabas",
+        "el/ella/usted": "estaba",
+        "nosotros": "estábamos",
+        "vosotros": "estabais",
+        "ellos/ellas/ustedes": "estaban"
+      },
+      "futuro": {
+        "yo": "estaré",
+        "tu": "estarás",
+        "el/ella/usted": "estará",
+        "nosotros": "estaremos",
+        "vosotros": "estaréis",
+        "ellos/ellas/ustedes": "estarán"
+      },
+      "condicional": {
+        "yo": "estaría",
+        "tu": "estarías",
+        "el/ella/usted": "estaría",
+        "nosotros": "estaríamos",
+        "vosotros": "estaríais",
+        "ellos/ellas/ustedes": "estarían"
+      },
+      "subjuntivo_presente": {
+        "yo": "esté",
+        "tu": "estés",
+        "el/ella/usted": "esté",
+        "nosotros": "estemos",
+        "vosotros": "estéis",
+        "ellos/ellas/ustedes": "estén"
+      },
+      "pretérito_perfecto": {
+        "yo": "he estado",
+        "tu": "has estado",
+        "el/ella/usted": "ha estado",
+        "nosotros": "hemos estado",
+        "vosotros": "habéis estado",
+        "ellos/ellas/ustedes": "han estado"
+      },
+      "pluscuamperfecto": {
+        "yo": "había estado",
+        "tu": "habías estado",
+        "el/ella/usted": "había estado",
+        "nosotros": "habíamos estado",
+        "vosotros": "habíais estado",
+        "ellos/ellas/ustedes": "habían estado"
+      }
+    },
+    "tener": {
+      "presente": {
+        "yo": "tengo",
+        "tu": "tienes",
+        "el/ella/usted": "tiene",
+        "nosotros": "tenemos",
+        "vosotros": "tenéis",
+        "ellos/ellas/ustedes": "tienen"
+      },
+      "pretérito": {
+        "yo": "tuve",
+        "tu": "tuviste",
+        "el/ella/usted": "tuvo",
+        "nosotros": "tuvimos",
+        "vosotros": "tuvisteis",
+        "ellos/ellas/ustedes": "tuvieron"
+      },
+      "imperfecto": {
+        "yo": "tenía",
+        "tu": "tenías",
+        "el/ella/usted": "tenía",
+        "nosotros": "teníamos",
+        "vosotros": "teníais",
+        "ellos/ellas/ustedes": "tenían"
+      },
+      "futuro": {
+        "yo": "tendré",
+        "tu": "tendrás",
+        "el/ella/usted": "tendrá",
+        "nosotros": "tendremos",
+        "vosotros": "tendréis",
+        "ellos/ellas/ustedes": "tendrán"
+      },
+      "condicional": {
+        "yo": "tendría",
+        "tu": "tendrías",
+        "el/ella/usted": "tendría",
+        "nosotros": "tendríamos",
+        "vosotros": "tendríais",
+        "ellos/ellas/ustedes": "tendrían"
+      },
+      "subjuntivo_presente": {
+        "yo": "tenga",
+        "tu": "tengas",
+        "el/ella/usted": "tenga",
+        "nosotros": "tengamos",
+        "vosotros": "tengáis",
+        "ellos/ellas/ustedes": "tengan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he tenido",
+        "tu": "has tenido",
+        "el/ella/usted": "ha tenido",
+        "nosotros": "hemos tenido",
+        "vosotros": "habéis tenido",
+        "ellos/ellas/ustedes": "han tenido"
+      },
+      "pluscuamperfecto": {
+        "yo": "había tenido",
+        "tu": "habías tenido",
+        "el/ella/usted": "había tenido",
+        "nosotros": "habíamos tenido",
+        "vosotros": "habíais tenido",
+        "ellos/ellas/ustedes": "habían tenido"
+      }
+    },
+    "hacer": {
+      "presente": {
+        "yo": "hago",
+        "tu": "haces",
+        "el/ella/usted": "hace",
+        "nosotros": "hacemos",
+        "vosotros": "hacéis",
+        "ellos/ellas/ustedes": "hacen"
+      },
+      "pretérito": {
+        "yo": "hice",
+        "tu": "hiciste",
+        "el/ella/usted": "hizo",
+        "nosotros": "hicimos",
+        "vosotros": "hicisteis",
+        "ellos/ellas/ustedes": "hicieron"
+      },
+      "imperfecto": {
+        "yo": "hacía",
+        "tu": "hacías",
+        "el/ella/usted": "hacía",
+        "nosotros": "hacíamos",
+        "vosotros": "hacíais",
+        "ellos/ellas/ustedes": "hacían"
+      },
+      "futuro": {
+        "yo": "haré",
+        "tu": "harás",
+        "el/ella/usted": "hará",
+        "nosotros": "haremos",
+        "vosotros": "haréis",
+        "ellos/ellas/ustedes": "harán"
+      },
+      "condicional": {
+        "yo": "haría",
+        "tu": "harías",
+        "el/ella/usted": "haría",
+        "nosotros": "haríamos",
+        "vosotros": "haríais",
+        "ellos/ellas/ustedes": "harían"
+      },
+      "subjuntivo_presente": {
+        "yo": "haga",
+        "tu": "hagas",
+        "el/ella/usted": "haga",
+        "nosotros": "hagamos",
+        "vosotros": "hagáis",
+        "ellos/ellas/ustedes": "hagan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he hecho",
+        "tu": "has hecho",
+        "el/ella/usted": "ha hecho",
+        "nosotros": "hemos hecho",
+        "vosotros": "habéis hecho",
+        "ellos/ellas/ustedes": "han hecho"
+      },
+      "pluscuamperfecto": {
+        "yo": "había hecho",
+        "tu": "habías hecho",
+        "el/ella/usted": "había hecho",
+        "nosotros": "habíamos hecho",
+        "vosotros": "habíais hecho",
+        "ellos/ellas/ustedes": "habían hecho"
+      }
+    },
+    "ir": {
+      "presente": {
+        "yo": "voy",
+        "tu": "vas",
+        "el/ella/usted": "va",
+        "nosotros": "vamos",
+        "vosotros": "vais",
+        "ellos/ellas/ustedes": "van"
+      },
+      "pretérito": {
+        "yo": "fui",
+        "tu": "fuiste",
+        "el/ella/usted": "fue",
+        "nosotros": "fuimos",
+        "vosotros": "fuisteis",
+        "ellos/ellas/ustedes": "fueron"
+      },
+      "imperfecto": {
+        "yo": "iba",
+        "tu": "ibas",
+        "el/ella/usted": "iba",
+        "nosotros": "íbamos",
+        "vosotros": "ibais",
+        "ellos/ellas/ustedes": "iban"
+      },
+      "futuro": {
+        "yo": "iré",
+        "tu": "irás",
+        "el/ella/usted": "irá",
+        "nosotros": "iremos",
+        "vosotros": "iréis",
+        "ellos/ellas/ustedes": "irán"
+      },
+      "condicional": {
+        "yo": "iría",
+        "tu": "irías",
+        "el/ella/usted": "iría",
+        "nosotros": "iríamos",
+        "vosotros": "iríais",
+        "ellos/ellas/ustedes": "irían"
+      },
+      "subjuntivo_presente": {
+        "yo": "vaya",
+        "tu": "vayas",
+        "el/ella/usted": "vaya",
+        "nosotros": "vayamos",
+        "vosotros": "vayáis",
+        "ellos/ellas/ustedes": "vayan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he ido",
+        "tu": "has ido",
+        "el/ella/usted": "ha ido",
+        "nosotros": "hemos ido",
+        "vosotros": "habéis ido",
+        "ellos/ellas/ustedes": "han ido"
+      },
+      "pluscuamperfecto": {
+        "yo": "había ido",
+        "tu": "habías ido",
+        "el/ella/usted": "había ido",
+        "nosotros": "habíamos ido",
+        "vosotros": "habíais ido",
+        "ellos/ellas/ustedes": "habían ido"
+      }
+    },
+    "venir": {
+      "presente": {
+        "yo": "vengo",
+        "tu": "vienes",
+        "el/ella/usted": "viene",
+        "nosotros": "venimos",
+        "vosotros": "venís",
+        "ellos/ellas/ustedes": "vienen"
+      },
+      "pretérito": {
+        "yo": "vine",
+        "tu": "viniste",
+        "el/ella/usted": "vino",
+        "nosotros": "vinimos",
+        "vosotros": "vinisteis",
+        "ellos/ellas/ustedes": "vinieron"
+      },
+      "imperfecto": {
+        "yo": "venía",
+        "tu": "venías",
+        "el/ella/usted": "venía",
+        "nosotros": "veníamos",
+        "vosotros": "veníais",
+        "ellos/ellas/ustedes": "venían"
+      },
+      "futuro": {
+        "yo": "vendré",
+        "tu": "vendrás",
+        "el/ella/usted": "vendrá",
+        "nosotros": "vendremos",
+        "vosotros": "vendréis",
+        "ellos/ellas/ustedes": "vendrán"
+      },
+      "condicional": {
+        "yo": "vendría",
+        "tu": "vendrías",
+        "el/ella/usted": "vendría",
+        "nosotros": "vendríamos",
+        "vosotros": "vendríais",
+        "ellos/ellas/ustedes": "vendrían"
+      },
+      "subjuntivo_presente": {
+        "yo": "venga",
+        "tu": "vengas",
+        "el/ella/usted": "venga",
+        "nosotros": "vengamos",
+        "vosotros": "vengáis",
+        "ellos/ellas/ustedes": "vengan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he venido",
+        "tu": "has venido",
+        "el/ella/usted": "ha venido",
+        "nosotros": "hemos venido",
+        "vosotros": "habéis venido",
+        "ellos/ellas/ustedes": "han venido"
+      },
+      "pluscuamperfecto": {
+        "yo": "había venido",
+        "tu": "habías venido",
+        "el/ella/usted": "había venido",
+        "nosotros": "habíamos venido",
+        "vosotros": "habíais venido",
+        "ellos/ellas/ustedes": "habían venido"
+      }
+    },
+    "poder": {
+      "presente": {
+        "yo": "puedo",
+        "tu": "puedes",
+        "el/ella/usted": "puede",
+        "nosotros": "podemos",
+        "vosotros": "podéis",
+        "ellos/ellas/ustedes": "pueden"
+      },
+      "pretérito": {
+        "yo": "pude",
+        "tu": "pudiste",
+        "el/ella/usted": "pudo",
+        "nosotros": "pudimos",
+        "vosotros": "pudisteis",
+        "ellos/ellas/ustedes": "pudieron"
+      },
+      "imperfecto": {
+        "yo": "podía",
+        "tu": "podías",
+        "el/ella/usted": "podía",
+        "nosotros": "podíamos",
+        "vosotros": "podíais",
+        "ellos/ellas/ustedes": "podían"
+      },
+      "futuro": {
+        "yo": "podré",
+        "tu": "podrás",
+        "el/ella/usted": "podrá",
+        "nosotros": "podremos",
+        "vosotros": "podréis",
+        "ellos/ellas/ustedes": "podrán"
+      },
+      "condicional": {
+        "yo": "podría",
+        "tu": "podrías",
+        "el/ella/usted": "podría",
+        "nosotros": "podríamos",
+        "vosotros": "podríais",
+        "ellos/ellas/ustedes": "podrían"
+      },
+      "subjuntivo_presente": {
+        "yo": "pueda",
+        "tu": "puedas",
+        "el/ella/usted": "pueda",
+        "nosotros": "podamos",
+        "vosotros": "podáis",
+        "ellos/ellas/ustedes": "puedan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he podido",
+        "tu": "has podido",
+        "el/ella/usted": "ha podido",
+        "nosotros": "hemos podido",
+        "vosotros": "habéis podido",
+        "ellos/ellas/ustedes": "han podido"
+      },
+      "pluscuamperfecto": {
+        "yo": "había podido",
+        "tu": "habías podido",
+        "el/ella/usted": "había podido",
+        "nosotros": "habíamos podido",
+        "vosotros": "habíais podido",
+        "ellos/ellas/ustedes": "habían podido"
+      }
+    },
+    "querer": {
+      "presente": {
+        "yo": "quiero",
+        "tu": "quieres",
+        "el/ella/usted": "quiere",
+        "nosotros": "queremos",
+        "vosotros": "queréis",
+        "ellos/ellas/ustedes": "quieren"
+      },
+      "pretérito": {
+        "yo": "quise",
+        "tu": "quisiste",
+        "el/ella/usted": "quiso",
+        "nosotros": "quisimos",
+        "vosotros": "quisisteis",
+        "ellos/ellas/ustedes": "quisieron"
+      },
+      "imperfecto": {
+        "yo": "quería",
+        "tu": "querías",
+        "el/ella/usted": "quería",
+        "nosotros": "queríamos",
+        "vosotros": "queríais",
+        "ellos/ellas/ustedes": "querían"
+      },
+      "futuro": {
+        "yo": "querré",
+        "tu": "querrás",
+        "el/ella/usted": "querrá",
+        "nosotros": "querremos",
+        "vosotros": "querréis",
+        "ellos/ellas/ustedes": "querrán"
+      },
+      "condicional": {
+        "yo": "querría",
+        "tu": "querrías",
+        "el/ella/usted": "querría",
+        "nosotros": "querríamos",
+        "vosotros": "querríais",
+        "ellos/ellas/ustedes": "querrían"
+      },
+      "subjuntivo_presente": {
+        "yo": "quiera",
+        "tu": "quieras",
+        "el/ella/usted": "quiera",
+        "nosotros": "queramos",
+        "vosotros": "queráis",
+        "ellos/ellas/ustedes": "quieran"
+      },
+      "pretérito_perfecto": {
+        "yo": "he querido",
+        "tu": "has querido",
+        "el/ella/usted": "ha querido",
+        "nosotros": "hemos querido",
+        "vosotros": "habéis querido",
+        "ellos/ellas/ustedes": "han querido"
+      },
+      "pluscuamperfecto": {
+        "yo": "había querido",
+        "tu": "habías querido",
+        "el/ella/usted": "había querido",
+        "nosotros": "habíamos querido",
+        "vosotros": "habíais querido",
+        "ellos/ellas/ustedes": "habían querido"
+      }
+    },
+    "decir": {
+      "presente": {
+        "yo": "digo",
+        "tu": "dices",
+        "el/ella/usted": "dice",
+        "nosotros": "decimos",
+        "vosotros": "decís",
+        "ellos/ellas/ustedes": "dicen"
+      },
+      "pretérito": {
+        "yo": "dije",
+        "tu": "dijiste",
+        "el/ella/usted": "dijo",
+        "nosotros": "dijimos",
+        "vosotros": "dijisteis",
+        "ellos/ellas/ustedes": "dijeron"
+      },
+      "imperfecto": {
+        "yo": "decía",
+        "tu": "decías",
+        "el/ella/usted": "decía",
+        "nosotros": "decíamos",
+        "vosotros": "decíais",
+        "ellos/ellas/ustedes": "decían"
+      },
+      "futuro": {
+        "yo": "diré",
+        "tu": "dirás",
+        "el/ella/usted": "dirá",
+        "nosotros": "diremos",
+        "vosotros": "diréis",
+        "ellos/ellas/ustedes": "dirán"
+      },
+      "condicional": {
+        "yo": "diría",
+        "tu": "dirías",
+        "el/ella/usted": "diría",
+        "nosotros": "diríamos",
+        "vosotros": "diríais",
+        "ellos/ellas/ustedes": "dirían"
+      },
+      "subjuntivo_presente": {
+        "yo": "diga",
+        "tu": "digas",
+        "el/ella/usted": "diga",
+        "nosotros": "digamos",
+        "vosotros": "digáis",
+        "ellos/ellas/ustedes": "digan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he dicho",
+        "tu": "has dicho",
+        "el/ella/usted": "ha dicho",
+        "nosotros": "hemos dicho",
+        "vosotros": "habéis dicho",
+        "ellos/ellas/ustedes": "han dicho"
+      },
+      "pluscuamperfecto": {
+        "yo": "había dicho",
+        "tu": "habías dicho",
+        "el/ella/usted": "había dicho",
+        "nosotros": "habíamos dicho",
+        "vosotros": "habíais dicho",
+        "ellos/ellas/ustedes": "habían dicho"
+      }
+    },
+    "dar": {
+      "presente": {
+        "yo": "doy",
+        "tu": "das",
+        "el/ella/usted": "da",
+        "nosotros": "damos",
+        "vosotros": "dais",
+        "ellos/ellas/ustedes": "dan"
+      },
+      "pretérito": {
+        "yo": "di",
+        "tu": "diste",
+        "el/ella/usted": "dio",
+        "nosotros": "dimos",
+        "vosotros": "disteis",
+        "ellos/ellas/ustedes": "dieron"
+      },
+      "imperfecto": {
+        "yo": "daba",
+        "tu": "dabas",
+        "el/ella/usted": "daba",
+        "nosotros": "dábamos",
+        "vosotros": "dabais",
+        "ellos/ellas/ustedes": "daban"
+      },
+      "futuro": {
+        "yo": "daré",
+        "tu": "darás",
+        "el/ella/usted": "dará",
+        "nosotros": "daremos",
+        "vosotros": "daréis",
+        "ellos/ellas/ustedes": "darán"
+      },
+      "condicional": {
+        "yo": "daría",
+        "tu": "darías",
+        "el/ella/usted": "daría",
+        "nosotros": "daríamos",
+        "vosotros": "daríais",
+        "ellos/ellas/ustedes": "darían"
+      },
+      "subjuntivo_presente": {
+        "yo": "dé",
+        "tu": "des",
+        "el/ella/usted": "dé",
+        "nosotros": "demos",
+        "vosotros": "deis",
+        "ellos/ellas/ustedes": "den"
+      },
+      "pretérito_perfecto": {
+        "yo": "he dado",
+        "tu": "has dado",
+        "el/ella/usted": "ha dado",
+        "nosotros": "hemos dado",
+        "vosotros": "habéis dado",
+        "ellos/ellas/ustedes": "han dado"
+      },
+      "pluscuamperfecto": {
+        "yo": "había dado",
+        "tu": "habías dado",
+        "el/ella/usted": "había dado",
+        "nosotros": "habíamos dado",
+        "vosotros": "habíais dado",
+        "ellos/ellas/ustedes": "habían dado"
+      }
+    },
+    "ver": {
+      "presente": {
+        "yo": "veo",
+        "tu": "ves",
+        "el/ella/usted": "ve",
+        "nosotros": "vemos",
+        "vosotros": "veis",
+        "ellos/ellas/ustedes": "ven"
+      },
+      "pretérito": {
+        "yo": "vi",
+        "tu": "viste",
+        "el/ella/usted": "vio",
+        "nosotros": "vimos",
+        "vosotros": "visteis",
+        "ellos/ellas/ustedes": "vieron"
+      },
+      "imperfecto": {
+        "yo": "veía",
+        "tu": "veías",
+        "el/ella/usted": "veía",
+        "nosotros": "veíamos",
+        "vosotros": "veíais",
+        "ellos/ellas/ustedes": "veían"
+      },
+      "futuro": {
+        "yo": "veré",
+        "tu": "verás",
+        "el/ella/usted": "verá",
+        "nosotros": "veremos",
+        "vosotros": "veréis",
+        "ellos/ellas/ustedes": "verán"
+      },
+      "condicional": {
+        "yo": "vería",
+        "tu": "verías",
+        "el/ella/usted": "vería",
+        "nosotros": "veríamos",
+        "vosotros": "veríais",
+        "ellos/ellas/ustedes": "verían"
+      },
+      "subjuntivo_presente": {
+        "yo": "vea",
+        "tu": "veas",
+        "el/ella/usted": "vea",
+        "nosotros": "veamos",
+        "vosotros": "veáis",
+        "ellos/ellas/ustedes": "vean"
+      },
+      "pretérito_perfecto": {
+        "yo": "he visto",
+        "tu": "has visto",
+        "el/ella/usted": "ha visto",
+        "nosotros": "hemos visto",
+        "vosotros": "habéis visto",
+        "ellos/ellas/ustedes": "han visto"
+      },
+      "pluscuamperfecto": {
+        "yo": "había visto",
+        "tu": "habías visto",
+        "el/ella/usted": "había visto",
+        "nosotros": "habíamos visto",
+        "vosotros": "habíais visto",
+        "ellos/ellas/ustedes": "habían visto"
+      }
+    },
+    "saber": {
+      "presente": {
+        "yo": "sé",
+        "tu": "sabes",
+        "el/ella/usted": "sabe",
+        "nosotros": "sabemos",
+        "vosotros": "sabéis",
+        "ellos/ellas/ustedes": "saben"
+      },
+      "pretérito": {
+        "yo": "supe",
+        "tu": "supiste",
+        "el/ella/usted": "supo",
+        "nosotros": "supimos",
+        "vosotros": "supisteis",
+        "ellos/ellas/ustedes": "supieron"
+      },
+      "imperfecto": {
+        "yo": "sabía",
+        "tu": "sabías",
+        "el/ella/usted": "sabía",
+        "nosotros": "sabíamos",
+        "vosotros": "sabíais",
+        "ellos/ellas/ustedes": "sabían"
+      },
+      "futuro": {
+        "yo": "sabré",
+        "tu": "sabrás",
+        "el/ella/usted": "sabrá",
+        "nosotros": "sabremos",
+        "vosotros": "sabréis",
+        "ellos/ellas/ustedes": "sabrán"
+      },
+      "condicional": {
+        "yo": "sabría",
+        "tu": "sabrías",
+        "el/ella/usted": "sabría",
+        "nosotros": "sabríamos",
+        "vosotros": "sabríais",
+        "ellos/ellas/ustedes": "sabrían"
+      },
+      "subjuntivo_presente": {
+        "yo": "sepa",
+        "tu": "sepas",
+        "el/ella/usted": "sepa",
+        "nosotros": "sepamos",
+        "vosotros": "sepáis",
+        "ellos/ellas/ustedes": "sepan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he sabido",
+        "tu": "has sabido",
+        "el/ella/usted": "ha sabido",
+        "nosotros": "hemos sabido",
+        "vosotros": "habéis sabido",
+        "ellos/ellas/ustedes": "han sabido"
+      },
+      "pluscuamperfecto": {
+        "yo": "había sabido",
+        "tu": "habías sabido",
+        "el/ella/usted": "había sabido",
+        "nosotros": "habíamos sabido",
+        "vosotros": "habíais sabido",
+        "ellos/ellas/ustedes": "habían sabido"
+      }
+    },
+    "poner": {
+      "presente": {
+        "yo": "pongo",
+        "tu": "pones",
+        "el/ella/usted": "pone",
+        "nosotros": "ponemos",
+        "vosotros": "ponéis",
+        "ellos/ellas/ustedes": "ponen"
+      },
+      "pretérito": {
+        "yo": "puse",
+        "tu": "pusiste",
+        "el/ella/usted": "puso",
+        "nosotros": "pusimos",
+        "vosotros": "pusisteis",
+        "ellos/ellas/ustedes": "pusieron"
+      },
+      "imperfecto": {
+        "yo": "ponía",
+        "tu": "ponías",
+        "el/ella/usted": "ponía",
+        "nosotros": "poníamos",
+        "vosotros": "poníais",
+        "ellos/ellas/ustedes": "ponían"
+      },
+      "futuro": {
+        "yo": "pondré",
+        "tu": "pondrás",
+        "el/ella/usted": "pondrá",
+        "nosotros": "pondremos",
+        "vosotros": "pondréis",
+        "ellos/ellas/ustedes": "pondrán"
+      },
+      "condicional": {
+        "yo": "pondría",
+        "tu": "pondrías",
+        "el/ella/usted": "pondría",
+        "nosotros": "pondríamos",
+        "vosotros": "pondríais",
+        "ellos/ellas/ustedes": "pondrían"
+      },
+      "subjuntivo_presente": {
+        "yo": "ponga",
+        "tu": "pongas",
+        "el/ella/usted": "ponga",
+        "nosotros": "pongamos",
+        "vosotros": "pongáis",
+        "ellos/ellas/ustedes": "pongan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he puesto",
+        "tu": "has puesto",
+        "el/ella/usted": "ha puesto",
+        "nosotros": "hemos puesto",
+        "vosotros": "habéis puesto",
+        "ellos/ellas/ustedes": "han puesto"
+      },
+      "pluscuamperfecto": {
+        "yo": "había puesto",
+        "tu": "habías puesto",
+        "el/ella/usted": "había puesto",
+        "nosotros": "habíamos puesto",
+        "vosotros": "habíais puesto",
+        "ellos/ellas/ustedes": "habían puesto"
+      }
+    },
+    "salir": {
+      "presente": {
+        "yo": "salgo",
+        "tu": "sales",
+        "el/ella/usted": "sale",
+        "nosotros": "salimos",
+        "vosotros": "salís",
+        "ellos/ellas/ustedes": "salen"
+      },
+      "pretérito": {
+        "yo": "salí",
+        "tu": "saliste",
+        "el/ella/usted": "salió",
+        "nosotros": "salimos",
+        "vosotros": "salisteis",
+        "ellos/ellas/ustedes": "salieron"
+      },
+      "imperfecto": {
+        "yo": "salía",
+        "tu": "salías",
+        "el/ella/usted": "salía",
+        "nosotros": "salíamos",
+        "vosotros": "salíais",
+        "ellos/ellas/ustedes": "salían"
+      },
+      "futuro": {
+        "yo": "saldré",
+        "tu": "saldrás",
+        "el/ella/usted": "saldrá",
+        "nosotros": "saldremos",
+        "vosotros": "saldréis",
+        "ellos/ellas/ustedes": "saldrán"
+      },
+      "condicional": {
+        "yo": "saldría",
+        "tu": "saldrías",
+        "el/ella/usted": "saldría",
+        "nosotros": "saldríamos",
+        "vosotros": "saldríais",
+        "ellos/ellas/ustedes": "saldrían"
+      },
+      "subjuntivo_presente": {
+        "yo": "salga",
+        "tu": "salgas",
+        "el/ella/usted": "salga",
+        "nosotros": "salgamos",
+        "vosotros": "salgáis",
+        "ellos/ellas/ustedes": "salgan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he salido",
+        "tu": "has salido",
+        "el/ella/usted": "ha salido",
+        "nosotros": "hemos salido",
+        "vosotros": "habéis salido",
+        "ellos/ellas/ustedes": "han salido"
+      },
+      "pluscuamperfecto": {
+        "yo": "había salido",
+        "tu": "habías salido",
+        "el/ella/usted": "había salido",
+        "nosotros": "habíamos salido",
+        "vosotros": "habíais salido",
+        "ellos/ellas/ustedes": "habían salido"
+      }
+    },
+    "traer": {
+      "presente": {
+        "yo": "traigo",
+        "tu": "traes",
+        "el/ella/usted": "trae",
+        "nosotros": "traemos",
+        "vosotros": "traéis",
+        "ellos/ellas/ustedes": "traen"
+      },
+      "pretérito": {
+        "yo": "traje",
+        "tu": "trajiste",
+        "el/ella/usted": "trajo",
+        "nosotros": "trajimos",
+        "vosotros": "trajisteis",
+        "ellos/ellas/ustedes": "trajeron"
+      },
+      "imperfecto": {
+        "yo": "traía",
+        "tu": "traías",
+        "el/ella/usted": "traía",
+        "nosotros": "traíamos",
+        "vosotros": "traíais",
+        "ellos/ellas/ustedes": "traían"
+      },
+      "futuro": {
+        "yo": "traeré",
+        "tu": "traerás",
+        "el/ella/usted": "traerá",
+        "nosotros": "traeremos",
+        "vosotros": "traeréis",
+        "ellos/ellas/ustedes": "traerán"
+      },
+      "condicional": {
+        "yo": "traería",
+        "tu": "traerías",
+        "el/ella/usted": "traería",
+        "nosotros": "traeríamos",
+        "vosotros": "traeríais",
+        "ellos/ellas/ustedes": "traerían"
+      },
+      "subjuntivo_presente": {
+        "yo": "traiga",
+        "tu": "traigas",
+        "el/ella/usted": "traiga",
+        "nosotros": "traigamos",
+        "vosotros": "traigáis",
+        "ellos/ellas/ustedes": "traigan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he traído",
+        "tu": "has traído",
+        "el/ella/usted": "ha traído",
+        "nosotros": "hemos traído",
+        "vosotros": "habéis traído",
+        "ellos/ellas/ustedes": "han traído"
+      },
+      "pluscuamperfecto": {
+        "yo": "había traído",
+        "tu": "habías traído",
+        "el/ella/usted": "había traído",
+        "nosotros": "habíamos traído",
+        "vosotros": "habíais traído",
+        "ellos/ellas/ustedes": "habían traído"
+      }
+    },
+    "oir": {
+      "presente": {
+        "yo": "oigo",
+        "tu": "oyes",
+        "el/ella/usted": "oye",
+        "nosotros": "oímos",
+        "vosotros": "oís",
+        "ellos/ellas/ustedes": "oyen"
+      },
+      "pretérito": {
+        "yo": "oí",
+        "tu": "oíste",
+        "el/ella/usted": "oyó",
+        "nosotros": "oímos",
+        "vosotros": "oísteis",
+        "ellos/ellas/ustedes": "oyeron"
+      },
+      "imperfecto": {
+        "yo": "oía",
+        "tu": "oías",
+        "el/ella/usted": "oía",
+        "nosotros": "oíamos",
+        "vosotros": "oíais",
+        "ellos/ellas/ustedes": "oían"
+      },
+      "futuro": {
+        "yo": "oiré",
+        "tu": "oirás",
+        "el/ella/usted": "oirá",
+        "nosotros": "oiremos",
+        "vosotros": "oiréis",
+        "ellos/ellas/ustedes": "oirán"
+      },
+      "condicional": {
+        "yo": "oiría",
+        "tu": "oirías",
+        "el/ella/usted": "oiría",
+        "nosotros": "oiríamos",
+        "vosotros": "oiríais",
+        "ellos/ellas/ustedes": "oirían"
+      },
+      "subjuntivo_presente": {
+        "yo": "oiga",
+        "tu": "oigas",
+        "el/ella/usted": "oiga",
+        "nosotros": "oigamos",
+        "vosotros": "oigáis",
+        "ellos/ellas/ustedes": "oigan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he oído",
+        "tu": "has oído",
+        "el/ella/usted": "ha oído",
+        "nosotros": "hemos oído",
+        "vosotros": "habéis oído",
+        "ellos/ellas/ustedes": "han oído"
+      },
+      "pluscuamperfecto": {
+        "yo": "había oído",
+        "tu": "habías oído",
+        "el/ella/usted": "había oído",
+        "nosotros": "habíamos oído",
+        "vosotros": "habíais oído",
+        "ellos/ellas/ustedes": "habían oído"
+      }
+    },
+    "caer": {
+      "presente": {
+        "yo": "caigo",
+        "tu": "caes",
+        "el/ella/usted": "cae",
+        "nosotros": "caemos",
+        "vosotros": "caéis",
+        "ellos/ellas/ustedes": "caen"
+      },
+      "pretérito": {
+        "yo": "caí",
+        "tu": "caíste",
+        "el/ella/usted": "cayó",
+        "nosotros": "caímos",
+        "vosotros": "caísteis",
+        "ellos/ellas/ustedes": "cayeron"
+      },
+      "imperfecto": {
+        "yo": "caía",
+        "tu": "caías",
+        "el/ella/usted": "caía",
+        "nosotros": "caíamos",
+        "vosotros": "caíais",
+        "ellos/ellas/ustedes": "caían"
+      },
+      "futuro": {
+        "yo": "caeré",
+        "tu": "caerás",
+        "el/ella/usted": "caerá",
+        "nosotros": "caeremos",
+        "vosotros": "caeréis",
+        "ellos/ellas/ustedes": "caerán"
+      },
+      "condicional": {
+        "yo": "caería",
+        "tu": "caerías",
+        "el/ella/usted": "caería",
+        "nosotros": "caeríamos",
+        "vosotros": "caeríais",
+        "ellos/ellas/ustedes": "caerían"
+      },
+      "subjuntivo_presente": {
+        "yo": "caiga",
+        "tu": "caigas",
+        "el/ella/usted": "caiga",
+        "nosotros": "caigamos",
+        "vosotros": "caigáis",
+        "ellos/ellas/ustedes": "caigan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he caído",
+        "tu": "has caído",
+        "el/ella/usted": "ha caído",
+        "nosotros": "hemos caído",
+        "vosotros": "habéis caído",
+        "ellos/ellas/ustedes": "han caído"
+      },
+      "pluscuamperfecto": {
+        "yo": "había caído",
+        "tu": "habías caído",
+        "el/ella/usted": "había caído",
+        "nosotros": "habíamos caído",
+        "vosotros": "habíais caído",
+        "ellos/ellas/ustedes": "habían caído"
+      }
+    },
+    "construir": {
+      "presente": {
+        "yo": "construyo",
+        "tu": "construyes",
+        "el/ella/usted": "construye",
+        "nosotros": "construimos",
+        "vosotros": "construís",
+        "ellos/ellas/ustedes": "construyen"
+      },
+      "pretérito": {
+        "yo": "construí",
+        "tu": "construiste",
+        "el/ella/usted": "construyó",
+        "nosotros": "construimos",
+        "vosotros": "construisteis",
+        "ellos/ellas/ustedes": "construyeron"
+      },
+      "imperfecto": {
+        "yo": "construía",
+        "tu": "construías",
+        "el/ella/usted": "construía",
+        "nosotros": "construíamos",
+        "vosotros": "construíais",
+        "ellos/ellas/ustedes": "construían"
+      },
+      "futuro": {
+        "yo": "construiré",
+        "tu": "construirás",
+        "el/ella/usted": "construirá",
+        "nosotros": "construiremos",
+        "vosotros": "construiréis",
+        "ellos/ellas/ustedes": "construirán"
+      },
+      "condicional": {
+        "yo": "construiría",
+        "tu": "construirías",
+        "el/ella/usted": "construiría",
+        "nosotros": "construiríamos",
+        "vosotros": "construiríais",
+        "ellos/ellas/ustedes": "construirían"
+      },
+      "subjuntivo_presente": {
+        "yo": "construya",
+        "tu": "construyas",
+        "el/ella/usted": "construya",
+        "nosotros": "construyamos",
+        "vosotros": "construyáis",
+        "ellos/ellas/ustedes": "construyan"
+      },
+      "pretérito_perfecto": {
+        "yo": "he construido",
+        "tu": "has construido",
+        "el/ella/usted": "ha construido",
+        "nosotros": "hemos construido",
+        "vosotros": "habéis construido",
+        "ellos/ellas/ustedes": "han construido"
+      },
+      "pluscuamperfecto": {
+        "yo": "había construido",
+        "tu": "habías construido",
+        "el/ella/usted": "había construido",
+        "nosotros": "habíamos construido",
+        "vosotros": "habíais construido",
+        "ellos/ellas/ustedes": "habían construido"
+      }
+    }
+  }
+}

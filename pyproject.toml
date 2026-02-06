@@ -1,0 +1,18 @@
+[project]
+name = "spanisch-flash"
+version = "0.1.0"
+description = "Spanish verb conjugation quiz Flask application"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["utils"]
+only-include = [
+    "utils",
+]
