@@ -28,7 +28,19 @@ def conjugations_options():
         tenses.update(verb_data.keys())
     tenses = sorted(list(tenses))
     
-    return render_template('options.html', verbs=verbs, tenses=tenses)
+    # Load saved preferences from session
+    saved_prefs = {
+        'selected_verbs': session.get('saved_verbs', verbs),  # Default to all verbs
+        'selected_tenses': session.get('saved_tenses', tenses),  # Default to all tenses
+        'seconds_per_question': session.get('saved_seconds_per_question', 3),
+        'num_questions': session.get('saved_num_questions', 10),
+        'contestants': session.get('saved_contestants', [])
+    }
+    
+    return render_template('options.html', 
+                         verbs=verbs, 
+                         tenses=tenses,
+                         saved_prefs=saved_prefs)
 
 @app.route('/quiz/conjugations/start', methods=['POST'])
 def start_quiz():
@@ -91,12 +103,19 @@ def start_quiz():
         # No contest mode, just add questions without contestant assignment
         questions = base_questions
     
-    # Store in session
+    # Store quiz data in session
     session['questions'] = questions
     session['current_question'] = 0
     session['seconds_per_question'] = seconds_per_question
     session['num_questions'] = num_questions
     session['contest_mode'] = contest_mode
+    
+    # Save user preferences for next time
+    session['saved_verbs'] = selected_verbs
+    session['saved_tenses'] = selected_tenses
+    session['saved_seconds_per_question'] = seconds_per_question
+    session['saved_num_questions'] = num_questions
+    session['saved_contestants'] = contestant_names
     
     return redirect(url_for('run_quiz'))
 
@@ -111,6 +130,7 @@ def run_quiz():
     
     if current_question >= len(questions):
         # Quiz complete, return to options
+        # Keep saved preferences, only remove quiz-specific data
         session.pop('questions', None)
         session.pop('current_question', None)
         session.pop('contest_mode', None)
@@ -135,6 +155,7 @@ def next_question():
     
     if session['current_question'] >= len(session.get('questions', [])):
         # Quiz complete
+        # Keep saved preferences, only remove quiz-specific data
         session.pop('questions', None)
         session.pop('current_question', None)
         session.pop('contest_mode', None)

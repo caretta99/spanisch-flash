@@ -18,7 +18,8 @@
             <div class="checkbox-group verbs">
                 {% for verb in verbs %}
                 <label class="checkbox-label">
-                    <input type="checkbox" name="verbs" value="{{ verb }}" checked>
+                    <input type="checkbox" name="verbs" value="{{ verb }}" 
+                           {% if verb in saved_prefs.selected_verbs %}checked{% endif %}>
                     <span>{{ verb }}</span>
                 </label>
                 {% endfor %}
@@ -36,7 +37,8 @@
             <div class="checkbox-group tenses">
                 {% for tense in tenses %}
                 <label class="checkbox-label">
-                    <input type="checkbox" name="tenses" value="{{ tense }}" checked>
+                    <input type="checkbox" name="tenses" value="{{ tense }}" 
+                           {% if tense in saved_prefs.selected_tenses %}checked{% endif %}>
                     <span>{{ tense }}</span>
                 </label>
                 {% endfor %}
@@ -53,14 +55,25 @@
                     </div>
                 </div>
                 <div id="contestant-inputs" class="contestant-inputs">
-                    <div class="contestant-input-wrapper">
-                        <input type="text" name="contestants" class="contestant-input" placeholder="Contestant 1">
-                        <button type="button" class="btn-remove-contestant" onclick="removeContestantBox(this)" style="display: none;">×</button>
-                    </div>
-                    <div class="contestant-input-wrapper">
-                        <input type="text" name="contestants" class="contestant-input" placeholder="Contestant 2">
-                        <button type="button" class="btn-remove-contestant" onclick="removeContestantBox(this)" style="display: none;">×</button>
-                    </div>
+                    {% if saved_prefs.contestants %}
+                        {% for contestant in saved_prefs.contestants %}
+                        <div class="contestant-input-wrapper">
+                            <input type="text" name="contestants" class="contestant-input" 
+                                   value="{{ contestant }}" placeholder="Contestant {{ loop.index }}">
+                            <button type="button" class="btn-remove-contestant" onclick="removeContestantBox(this)" 
+                                    {% if saved_prefs.contestants|length <= 2 %}style="display: none;"{% endif %}>×</button>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="contestant-input-wrapper">
+                            <input type="text" name="contestants" class="contestant-input" placeholder="Contestant 1">
+                            <button type="button" class="btn-remove-contestant" onclick="removeContestantBox(this)" style="display: none;">×</button>
+                        </div>
+                        <div class="contestant-input-wrapper">
+                            <input type="text" name="contestants" class="contestant-input" placeholder="Contestant 2">
+                            <button type="button" class="btn-remove-contestant" onclick="removeContestantBox(this)" style="display: none;">×</button>
+                        </div>
+                    {% endif %}
                 </div>
                 <p class="contestant-hint">Leave empty to disable contest mode</p>
             </div>
@@ -71,12 +84,12 @@
             <div class="input-group">
                 <label for="seconds_per_question">Seconds per question:</label>
                 <input type="number" id="seconds_per_question" name="seconds_per_question" 
-                       value="3" min="1" max="60" required>
+                       value="{{ saved_prefs.seconds_per_question }}" min="1" max="60" required>
             </div>
             <div class="input-group">
                 <label for="num_questions">Number of questions:</label>
                 <input type="number" id="num_questions" name="num_questions" 
-                       value="10" min="1" max="100" required>
+                       value="{{ saved_prefs.num_questions }}" min="1" max="100" required>
             </div>
         </div>
         
@@ -108,7 +121,7 @@ function deselectAllTenses() {
     checkboxes.forEach(checkbox => checkbox.checked = false);
 }
 
-let contestantCounter = 2;
+let contestantCounter = {{ saved_prefs.contestants|length if saved_prefs.contestants and saved_prefs.contestants|length > 0 else 2 }};
 
 function addContestantBox() {
     contestantCounter++;
