@@ -486,6 +486,197 @@ footer {
     font-size: 0.875rem;
 }
 
+/* Info Page Styles (non-quiz applets) */
+.info-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--surface);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.info-page-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.info-title {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+}
+
+.info-subtitle {
+    color: var(--text-secondary);
+    max-width: 70ch;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .info-grid .info-frame.frame-check,
+    .info-grid .info-frame.frame-slate {
+        grid-column: 1 / -1;
+    }
+}
+
+.info-frame {
+    border-radius: 0.9rem;
+    border: 2px solid var(--border-color);
+    padding: 1.25rem 1.25rem 1.1rem;
+    background: var(--background);
+}
+
+.info-frame h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.info-frame h4 {
+    font-size: 1.05rem;
+    margin: 0.5rem 0 0.5rem;
+    color: var(--text-primary);
+}
+
+.info-frame ul {
+    padding-left: 1.1rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.info-note,
+.info-source {
+    margin-top: 0.85rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .two-col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.info-footer-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Color frames */
+.frame-blue {
+    border-color: rgba(37, 99, 235, 0.45);
+    background: rgba(37, 99, 235, 0.06);
+}
+
+.frame-green {
+    border-color: rgba(22, 163, 74, 0.45);
+    background: rgba(22, 163, 74, 0.06);
+}
+
+.frame-amber {
+    border-color: rgba(245, 158, 11, 0.5);
+    background: rgba(245, 158, 11, 0.08);
+}
+
+.frame-purple {
+    border-color: rgba(124, 58, 237, 0.45);
+    background: rgba(124, 58, 237, 0.07);
+}
+
+.frame-teal {
+    border-color: rgba(13, 148, 136, 0.45);
+    background: rgba(13, 148, 136, 0.07);
+}
+
+.frame-rose {
+    border-color: rgba(225, 29, 72, 0.38);
+    background: rgba(225, 29, 72, 0.06);
+}
+
+.frame-slate {
+    border-color: rgba(100, 116, 139, 0.5);
+    background: rgba(100, 116, 139, 0.08);
+}
+
+.frame-check {
+    border-color: rgba(37, 99, 235, 0.35);
+    background:
+        radial-gradient(600px 300px at 10% 20%, rgba(37, 99, 235, 0.10), transparent 60%),
+        radial-gradient(600px 300px at 90% 80%, rgba(22, 163, 74, 0.08), transparent 60%),
+        var(--background);
+}
+
+.checklist li {
+    list-style: "✓  ";
+    padding-left: 0.25rem;
+}
+
+/* DELE glossary helpers */
+.gloss {
+    text-decoration: underline dotted;
+    text-underline-offset: 0.2em;
+    cursor: help;
+}
+
+.dele-glossary {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.dele-glossary summary {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dele-glossary .glossary-grid {
+    margin-top: 0.75rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .dele-glossary .glossary-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.dele-glossary .glossary-item {
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.dele-glossary .glossary-term {
+    font-weight: 650;
+}
+
+.dele-glossary .glossary-translations {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
 /* Quiz Page Styles */
 .quiz-page {
     max-width: 900px;
@@ -549,12 +740,27 @@ footer {
     border: 2px solid var(--primary-color);
 }
 
-.verb-infinitive {
+/* Conjugations quiz question layout */
+.conj-line1,
+.conj-line2 {
     font-size: 3.5rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
     text-transform: capitalize;
+}
+
+.conj-line1 {
+    margin-bottom: 1rem;
+}
+
+.conj-line1 .plus {
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: none;
+}
+
+.conj-line2 {
+    margin-bottom: 1.5rem;
 }
 
 .sentence-text {
@@ -574,21 +780,9 @@ footer {
     text-transform: capitalize;
 }
 
-.tense-person {
-    font-size: 1.5rem;
-    color: var(--text-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.separator {
-    color: var(--border-color);
-}
-
-.tense, .person {
+/* Shared capitalization helpers (used across quizzes/templates) */
+.tense,
+.person {
     text-transform: capitalize;
 }
 
@@ -720,7 +914,8 @@ footer {
         padding: 2rem;
     }
     
-    .verb-infinitive {
+    .conj-line1,
+    .conj-line2 {
         font-size: 2.5rem;
     }
     

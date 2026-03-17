@@ -9,7 +9,7 @@
         "vosotros": "sois",
         "ellos/ellas/ustedes": "son"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "fui",
         "tu": "fuiste",
         "el/ella/usted": "fue",
@@ -25,7 +25,7 @@
         "vosotros": "erais",
         "ellos/ellas/ustedes": "eran"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "seré",
         "tu": "serás",
         "el/ella/usted": "será",
@@ -49,7 +49,23 @@
         "vosotros": "seáis",
         "ellos/ellas/ustedes": "sean"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "sé",
+        "el/ella/usted": "sea",
+        "nosotros": "seamos",
+        "vosotros": "sed",
+        "ellos/ellas/ustedes": "sean"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no seas",
+        "el/ella/usted": "no sea",
+        "nosotros": "no seamos",
+        "vosotros": "no seáis",
+        "ellos/ellas/ustedes": "no sean"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he sido",
         "tu": "has sido",
         "el/ella/usted": "ha sido",
@@ -75,7 +91,7 @@
         "vosotros": "estáis",
         "ellos/ellas/ustedes": "están"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "estuve",
         "tu": "estuviste",
         "el/ella/usted": "estuvo",
@@ -91,7 +107,7 @@
         "vosotros": "estabais",
         "ellos/ellas/ustedes": "estaban"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "estaré",
         "tu": "estarás",
         "el/ella/usted": "estará",
@@ -115,7 +131,23 @@
         "vosotros": "estéis",
         "ellos/ellas/ustedes": "estén"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "está",
+        "el/ella/usted": "esté",
+        "nosotros": "estemos",
+        "vosotros": "estad",
+        "ellos/ellas/ustedes": "estén"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no estés",
+        "el/ella/usted": "no esté",
+        "nosotros": "no estemos",
+        "vosotros": "no estéis",
+        "ellos/ellas/ustedes": "no estén"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he estado",
         "tu": "has estado",
         "el/ella/usted": "ha estado",
@@ -141,7 +173,7 @@
         "vosotros": "tenéis",
         "ellos/ellas/ustedes": "tienen"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "tuve",
         "tu": "tuviste",
         "el/ella/usted": "tuvo",
@@ -157,7 +189,7 @@
         "vosotros": "teníais",
         "ellos/ellas/ustedes": "tenían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "tendré",
         "tu": "tendrás",
         "el/ella/usted": "tendrá",
@@ -181,7 +213,23 @@
         "vosotros": "tengáis",
         "ellos/ellas/ustedes": "tengan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "ten",
+        "el/ella/usted": "tenga",
+        "nosotros": "tengamos",
+        "vosotros": "tened",
+        "ellos/ellas/ustedes": "tengan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no tengas",
+        "el/ella/usted": "no tenga",
+        "nosotros": "no tengamos",
+        "vosotros": "no tengáis",
+        "ellos/ellas/ustedes": "no tengan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he tenido",
         "tu": "has tenido",
         "el/ella/usted": "ha tenido",
@@ -207,7 +255,7 @@
         "vosotros": "hacéis",
         "ellos/ellas/ustedes": "hacen"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "hice",
         "tu": "hiciste",
         "el/ella/usted": "hizo",
@@ -223,7 +271,7 @@
         "vosotros": "hacíais",
         "ellos/ellas/ustedes": "hacían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "haré",
         "tu": "harás",
         "el/ella/usted": "hará",
@@ -247,7 +295,23 @@
         "vosotros": "hagáis",
         "ellos/ellas/ustedes": "hagan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "haz",
+        "el/ella/usted": "haga",
+        "nosotros": "hagamos",
+        "vosotros": "haced",
+        "ellos/ellas/ustedes": "hagan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no hagas",
+        "el/ella/usted": "no haga",
+        "nosotros": "no hagamos",
+        "vosotros": "no hagáis",
+        "ellos/ellas/ustedes": "no hagan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he hecho",
         "tu": "has hecho",
         "el/ella/usted": "ha hecho",
@@ -273,7 +337,7 @@
         "vosotros": "vais",
         "ellos/ellas/ustedes": "van"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "fui",
         "tu": "fuiste",
         "el/ella/usted": "fue",
@@ -289,7 +353,7 @@
         "vosotros": "ibais",
         "ellos/ellas/ustedes": "iban"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "iré",
         "tu": "irás",
         "el/ella/usted": "irá",
@@ -313,7 +377,23 @@
         "vosotros": "vayáis",
         "ellos/ellas/ustedes": "vayan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "ve",
+        "el/ella/usted": "vaya",
+        "nosotros": "vayamos",
+        "vosotros": "id",
+        "ellos/ellas/ustedes": "vayan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no vayas",
+        "el/ella/usted": "no vaya",
+        "nosotros": "no vayamos",
+        "vosotros": "no vayáis",
+        "ellos/ellas/ustedes": "no vayan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he ido",
         "tu": "has ido",
         "el/ella/usted": "ha ido",
@@ -339,7 +419,7 @@
         "vosotros": "venís",
         "ellos/ellas/ustedes": "vienen"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "vine",
         "tu": "viniste",
         "el/ella/usted": "vino",
@@ -355,7 +435,7 @@
         "vosotros": "veníais",
         "ellos/ellas/ustedes": "venían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "vendré",
         "tu": "vendrás",
         "el/ella/usted": "vendrá",
@@ -379,7 +459,23 @@
         "vosotros": "vengáis",
         "ellos/ellas/ustedes": "vengan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "ven",
+        "el/ella/usted": "venga",
+        "nosotros": "vengamos",
+        "vosotros": "venid",
+        "ellos/ellas/ustedes": "vengan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no vengas",
+        "el/ella/usted": "no venga",
+        "nosotros": "no vengamos",
+        "vosotros": "no vengáis",
+        "ellos/ellas/ustedes": "no vengan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he venido",
         "tu": "has venido",
         "el/ella/usted": "ha venido",
@@ -405,7 +501,7 @@
         "vosotros": "podéis",
         "ellos/ellas/ustedes": "pueden"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "pude",
         "tu": "pudiste",
         "el/ella/usted": "pudo",
@@ -421,7 +517,7 @@
         "vosotros": "podíais",
         "ellos/ellas/ustedes": "podían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "podré",
         "tu": "podrás",
         "el/ella/usted": "podrá",
@@ -445,7 +541,23 @@
         "vosotros": "podáis",
         "ellos/ellas/ustedes": "puedan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "puede",
+        "el/ella/usted": "pueda",
+        "nosotros": "podamos",
+        "vosotros": "poded",
+        "ellos/ellas/ustedes": "puedan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no puedas",
+        "el/ella/usted": "no pueda",
+        "nosotros": "no podamos",
+        "vosotros": "no podáis",
+        "ellos/ellas/ustedes": "no puedan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he podido",
         "tu": "has podido",
         "el/ella/usted": "ha podido",
@@ -471,7 +583,7 @@
         "vosotros": "queréis",
         "ellos/ellas/ustedes": "quieren"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "quise",
         "tu": "quisiste",
         "el/ella/usted": "quiso",
@@ -487,7 +599,7 @@
         "vosotros": "queríais",
         "ellos/ellas/ustedes": "querían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "querré",
         "tu": "querrás",
         "el/ella/usted": "querrá",
@@ -511,7 +623,23 @@
         "vosotros": "queráis",
         "ellos/ellas/ustedes": "quieran"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "quiere",
+        "el/ella/usted": "quiera",
+        "nosotros": "queramos",
+        "vosotros": "quered",
+        "ellos/ellas/ustedes": "quieran"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no quieras",
+        "el/ella/usted": "no quiera",
+        "nosotros": "no queramos",
+        "vosotros": "no queráis",
+        "ellos/ellas/ustedes": "no quieran"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he querido",
         "tu": "has querido",
         "el/ella/usted": "ha querido",
@@ -537,7 +665,7 @@
         "vosotros": "decís",
         "ellos/ellas/ustedes": "dicen"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "dije",
         "tu": "dijiste",
         "el/ella/usted": "dijo",
@@ -553,7 +681,7 @@
         "vosotros": "decíais",
         "ellos/ellas/ustedes": "decían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "diré",
         "tu": "dirás",
         "el/ella/usted": "dirá",
@@ -577,7 +705,23 @@
         "vosotros": "digáis",
         "ellos/ellas/ustedes": "digan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "di",
+        "el/ella/usted": "diga",
+        "nosotros": "digamos",
+        "vosotros": "decid",
+        "ellos/ellas/ustedes": "digan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no digas",
+        "el/ella/usted": "no diga",
+        "nosotros": "no digamos",
+        "vosotros": "no digáis",
+        "ellos/ellas/ustedes": "no digan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he dicho",
         "tu": "has dicho",
         "el/ella/usted": "ha dicho",
@@ -603,7 +747,7 @@
         "vosotros": "dais",
         "ellos/ellas/ustedes": "dan"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "di",
         "tu": "diste",
         "el/ella/usted": "dio",
@@ -619,7 +763,7 @@
         "vosotros": "dabais",
         "ellos/ellas/ustedes": "daban"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "daré",
         "tu": "darás",
         "el/ella/usted": "dará",
@@ -643,7 +787,23 @@
         "vosotros": "deis",
         "ellos/ellas/ustedes": "den"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "da",
+        "el/ella/usted": "dé",
+        "nosotros": "demos",
+        "vosotros": "dad",
+        "ellos/ellas/ustedes": "den"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no des",
+        "el/ella/usted": "no dé",
+        "nosotros": "no demos",
+        "vosotros": "no deis",
+        "ellos/ellas/ustedes": "no den"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he dado",
         "tu": "has dado",
         "el/ella/usted": "ha dado",
@@ -669,7 +829,7 @@
         "vosotros": "veis",
         "ellos/ellas/ustedes": "ven"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "vi",
         "tu": "viste",
         "el/ella/usted": "vio",
@@ -685,7 +845,7 @@
         "vosotros": "veíais",
         "ellos/ellas/ustedes": "veían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "veré",
         "tu": "verás",
         "el/ella/usted": "verá",
@@ -709,7 +869,23 @@
         "vosotros": "veáis",
         "ellos/ellas/ustedes": "vean"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "ve",
+        "el/ella/usted": "vea",
+        "nosotros": "veamos",
+        "vosotros": "ved",
+        "ellos/ellas/ustedes": "vean"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no veas",
+        "el/ella/usted": "no vea",
+        "nosotros": "no veamos",
+        "vosotros": "no veáis",
+        "ellos/ellas/ustedes": "no vean"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he visto",
         "tu": "has visto",
         "el/ella/usted": "ha visto",
@@ -735,7 +911,7 @@
         "vosotros": "sabéis",
         "ellos/ellas/ustedes": "saben"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "supe",
         "tu": "supiste",
         "el/ella/usted": "supo",
@@ -751,7 +927,7 @@
         "vosotros": "sabíais",
         "ellos/ellas/ustedes": "sabían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "sabré",
         "tu": "sabrás",
         "el/ella/usted": "sabrá",
@@ -775,7 +951,23 @@
         "vosotros": "sepáis",
         "ellos/ellas/ustedes": "sepan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "sabe",
+        "el/ella/usted": "sepa",
+        "nosotros": "sepamos",
+        "vosotros": "sabed",
+        "ellos/ellas/ustedes": "sepan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no sepas",
+        "el/ella/usted": "no sepa",
+        "nosotros": "no sepamos",
+        "vosotros": "no sepáis",
+        "ellos/ellas/ustedes": "no sepan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he sabido",
         "tu": "has sabido",
         "el/ella/usted": "ha sabido",
@@ -801,7 +993,7 @@
         "vosotros": "ponéis",
         "ellos/ellas/ustedes": "ponen"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "puse",
         "tu": "pusiste",
         "el/ella/usted": "puso",
@@ -817,7 +1009,7 @@
         "vosotros": "poníais",
         "ellos/ellas/ustedes": "ponían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "pondré",
         "tu": "pondrás",
         "el/ella/usted": "pondrá",
@@ -841,7 +1033,23 @@
         "vosotros": "pongáis",
         "ellos/ellas/ustedes": "pongan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "pon",
+        "el/ella/usted": "ponga",
+        "nosotros": "pongamos",
+        "vosotros": "poned",
+        "ellos/ellas/ustedes": "pongan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no pongas",
+        "el/ella/usted": "no ponga",
+        "nosotros": "no pongamos",
+        "vosotros": "no pongáis",
+        "ellos/ellas/ustedes": "no pongan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he puesto",
         "tu": "has puesto",
         "el/ella/usted": "ha puesto",
@@ -867,7 +1075,7 @@
         "vosotros": "salís",
         "ellos/ellas/ustedes": "salen"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "salí",
         "tu": "saliste",
         "el/ella/usted": "salió",
@@ -883,7 +1091,7 @@
         "vosotros": "salíais",
         "ellos/ellas/ustedes": "salían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "saldré",
         "tu": "saldrás",
         "el/ella/usted": "saldrá",
@@ -907,7 +1115,23 @@
         "vosotros": "salgáis",
         "ellos/ellas/ustedes": "salgan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "sal",
+        "el/ella/usted": "salga",
+        "nosotros": "salgamos",
+        "vosotros": "salid",
+        "ellos/ellas/ustedes": "salgan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no salgas",
+        "el/ella/usted": "no salga",
+        "nosotros": "no salgamos",
+        "vosotros": "no salgáis",
+        "ellos/ellas/ustedes": "no salgan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he salido",
         "tu": "has salido",
         "el/ella/usted": "ha salido",
@@ -933,7 +1157,7 @@
         "vosotros": "traéis",
         "ellos/ellas/ustedes": "traen"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "traje",
         "tu": "trajiste",
         "el/ella/usted": "trajo",
@@ -949,7 +1173,7 @@
         "vosotros": "traíais",
         "ellos/ellas/ustedes": "traían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "traeré",
         "tu": "traerás",
         "el/ella/usted": "traerá",
@@ -973,7 +1197,23 @@
         "vosotros": "traigáis",
         "ellos/ellas/ustedes": "traigan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "trae",
+        "el/ella/usted": "traiga",
+        "nosotros": "traigamos",
+        "vosotros": "traed",
+        "ellos/ellas/ustedes": "traigan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no traigas",
+        "el/ella/usted": "no traiga",
+        "nosotros": "no traigamos",
+        "vosotros": "no traigáis",
+        "ellos/ellas/ustedes": "no traigan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he traído",
         "tu": "has traído",
         "el/ella/usted": "ha traído",
@@ -999,7 +1239,7 @@
         "vosotros": "oís",
         "ellos/ellas/ustedes": "oyen"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "oí",
         "tu": "oíste",
         "el/ella/usted": "oyó",
@@ -1015,7 +1255,7 @@
         "vosotros": "oíais",
         "ellos/ellas/ustedes": "oían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "oiré",
         "tu": "oirás",
         "el/ella/usted": "oirá",
@@ -1039,7 +1279,23 @@
         "vosotros": "oigáis",
         "ellos/ellas/ustedes": "oigan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "oye",
+        "el/ella/usted": "oiga",
+        "nosotros": "oigamos",
+        "vosotros": "oid",
+        "ellos/ellas/ustedes": "oigan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no oigas",
+        "el/ella/usted": "no oiga",
+        "nosotros": "no oigamos",
+        "vosotros": "no oigáis",
+        "ellos/ellas/ustedes": "no oigan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he oído",
         "tu": "has oído",
         "el/ella/usted": "ha oído",
@@ -1065,7 +1321,7 @@
         "vosotros": "caéis",
         "ellos/ellas/ustedes": "caen"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "caí",
         "tu": "caíste",
         "el/ella/usted": "cayó",
@@ -1081,7 +1337,7 @@
         "vosotros": "caíais",
         "ellos/ellas/ustedes": "caían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "caeré",
         "tu": "caerás",
         "el/ella/usted": "caerá",
@@ -1105,7 +1361,23 @@
         "vosotros": "caigáis",
         "ellos/ellas/ustedes": "caigan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "cae",
+        "el/ella/usted": "caiga",
+        "nosotros": "caigamos",
+        "vosotros": "caed",
+        "ellos/ellas/ustedes": "caigan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no caigas",
+        "el/ella/usted": "no caiga",
+        "nosotros": "no caigamos",
+        "vosotros": "no caigáis",
+        "ellos/ellas/ustedes": "no caigan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he caído",
         "tu": "has caído",
         "el/ella/usted": "ha caído",
@@ -1131,7 +1403,7 @@
         "vosotros": "construís",
         "ellos/ellas/ustedes": "construyen"
       },
-      "pretérito": {
+      "pretérito_indefinido": {
         "yo": "construí",
         "tu": "construiste",
         "el/ella/usted": "construyó",
@@ -1147,7 +1419,7 @@
         "vosotros": "construíais",
         "ellos/ellas/ustedes": "construían"
       },
-      "futuro": {
+      "futuro_simple": {
         "yo": "construiré",
         "tu": "construirás",
         "el/ella/usted": "construirá",
@@ -1171,7 +1443,23 @@
         "vosotros": "construyáis",
         "ellos/ellas/ustedes": "construyan"
       },
-      "pretérito_perfecto": {
+      "imperativo_afirmativo": {
+        "yo": "[N/A]",
+        "tu": "construye",
+        "el/ella/usted": "construya",
+        "nosotros": "construyamos",
+        "vosotros": "construid",
+        "ellos/ellas/ustedes": "construyan"
+      },
+      "imperativo_negativo": {
+        "yo": "[N/A]",
+        "tu": "no construyas",
+        "el/ella/usted": "no construya",
+        "nosotros": "no construyamos",
+        "vosotros": "no construyáis",
+        "ellos/ellas/ustedes": "no construyan"
+      },
+      "pretérito_perfecto_compuesto": {
         "yo": "he construido",
         "tu": "has construido",
         "el/ella/usted": "ha construido",

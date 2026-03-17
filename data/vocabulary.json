@@ -1,5 +1,134 @@
 {
   "vocab_sets": {
+    "dele_b1_info": [
+      { "spanish": "acreditar", "german": "bescheinigen, nachweisen", "english": "to certify, to attest" },
+      { "spanish": "aprobar (un examen)", "german": "eine Prüfung bestehen", "english": "to pass (an exam)" },
+      { "spanish": "examen", "german": "Prüfung", "english": "exam" },
+      { "spanish": "DELE", "german": "DELE (Diplom für Spanisch als Fremdsprache)", "english": "DELE (Diploma of Spanish as a Foreign Language)" },
+      { "spanish": "nivel umbral", "german": "Schwellenstufe", "english": "threshold level" },
+      { "spanish": "competencias", "german": "Kompetenzen", "english": "competences" },
+      { "spanish": "dominar", "german": "beherrschen", "english": "to master" },
+      { "spanish": "comprender", "german": "verstehen", "english": "to understand" },
+      { "spanish": "puntos principales", "german": "Hauptpunkte", "english": "main points" },
+      { "spanish": "texto oral", "german": "gesprochener Text", "english": "spoken text" },
+      { "spanish": "texto escrito", "german": "schriftlicher Text", "english": "written text" },
+      { "spanish": "lengua estándar", "german": "Standardsprache", "english": "standard language" },
+      { "spanish": "asuntos conocidos", "german": "bekannte Themen", "english": "familiar topics" },
+      { "spanish": "vida cotidiana", "german": "Alltag", "english": "everyday life" },
+      { "spanish": "desenvolverse", "german": "zurechtkommen", "english": "to cope, to manage" },
+      { "spanish": "situaciones habituales", "german": "typische Situationen", "english": "everyday situations" },
+      { "spanish": "producir (textos)", "german": "(Texte) verfassen", "english": "to produce (texts)" },
+      { "spanish": "sencillo", "german": "einfach", "english": "simple" },
+      { "spanish": "coherente", "german": "kohärent, stimmig", "english": "coherent" },
+      { "spanish": "tema", "german": "Thema", "english": "topic" },
+      { "spanish": "interés personal", "german": "persönliches Interesse", "english": "personal interest" },
+      { "spanish": "experiencia", "german": "Erfahrung", "english": "experience" },
+      { "spanish": "acontecimiento", "german": "Ereignis", "english": "event" },
+      { "spanish": "deseo", "german": "Wunsch", "english": "wish" },
+      { "spanish": "plan", "german": "Plan", "english": "plan" },
+      { "spanish": "opinión", "german": "Meinung", "english": "opinion" },
+
+      { "spanish": "estructura del examen", "german": "Aufbau der Prüfung", "english": "exam structure" },
+      { "spanish": "muy resumida", "german": "sehr kurz zusammengefasst", "english": "very briefly summarized" },
+      { "spanish": "comprensión de lectura", "german": "Leseverstehen", "english": "reading comprehension" },
+      { "spanish": "comprensión auditiva", "german": "Hörverstehen", "english": "listening comprehension" },
+      { "spanish": "expresión e interacción escritas", "german": "schriftlicher Ausdruck und Interaktion", "english": "written expression and interaction" },
+      { "spanish": "expresión e interacción orales", "german": "mündlicher Ausdruck und Interaktion", "english": "oral expression and interaction" },
+      { "spanish": "tarea", "german": "Aufgabe", "english": "task" },
+      { "spanish": "anuncio", "german": "Anzeige", "english": "ad" },
+      { "spanish": "mensaje", "german": "Nachricht", "english": "message" },
+      { "spanish": "texto informativo", "german": "Informationstext", "english": "informative text" },
+      { "spanish": "cohesión", "german": "Kohäsion (Textzusammenhang)", "english": "cohesion" },
+      { "spanish": "elección léxico-gramatical", "german": "lexikalisch-grammatische Auswahl", "english": "lexico-grammatical choice" },
+      { "spanish": "aviso", "german": "Hinweis, Durchsage", "english": "notice, announcement" },
+      { "spanish": "monólogo", "german": "Monolog", "english": "monologue" },
+      { "spanish": "noticia", "german": "Nachricht", "english": "news item" },
+      { "spanish": "conversación informal", "german": "informelles Gespräch", "english": "informal conversation" },
+      { "spanish": "preparación", "german": "Vorbereitung", "english": "preparation" },
+      { "spanish": "presentación breve", "german": "kurze Präsentation", "english": "short presentation" },
+      { "spanish": "descripción de foto", "german": "Fotobeschreibung", "english": "photo description" },
+      { "spanish": "situación simulada", "german": "simulierte Situation", "english": "simulated situation" },
+
+      { "spanish": "tiempo verbal", "german": "Zeitform", "english": "verb tense" },
+      { "spanish": "modo verbal", "german": "Modus", "english": "verb mood" },
+      { "spanish": "indicativo", "german": "Indikativ", "english": "indicative" },
+      { "spanish": "subjuntivo", "german": "Subjuntivo", "english": "subjunctive" },
+      { "spanish": "imperativo", "german": "Imperativ", "english": "imperative" },
+      { "spanish": "pretérito imperfecto", "german": "Imperfekt (Spanisch)", "english": "imperfect (past) tense" },
+      { "spanish": "pretérito indefinido", "german": "Indefinido (Spanisch)", "english": "preterite (simple past)" },
+      { "spanish": "pretérito perfecto", "german": "Perfekt (Spanisch)", "english": "present perfect" },
+      { "spanish": "pretérito pluscuamperfecto", "german": "Plusquamperfekt (Spanisch)", "english": "pluperfect" },
+      { "spanish": "futuro imperfecto", "german": "Futur", "english": "future" },
+      { "spanish": "condicional simple", "german": "Konditional", "english": "conditional" },
+      { "spanish": "forma no personal", "german": "unpersönliche Verbform", "english": "non-finite verb form" },
+      { "spanish": "infinitivo", "german": "Infinitiv", "english": "infinitive" },
+      { "spanish": "gerundio", "german": "Gerundium", "english": "gerund" },
+      { "spanish": "participio", "german": "Partizip", "english": "participle" },
+      { "spanish": "perífrasis (verbal)", "german": "Verbalperiphrase", "english": "verbal periphrasis" },
+      { "spanish": "narración", "german": "Erzählung", "english": "narration" },
+      { "spanish": "descripción", "german": "Beschreibung", "english": "description" },
+      { "spanish": "duda", "german": "Zweifel", "english": "doubt" },
+      { "spanish": "recomendación", "german": "Empfehlung", "english": "recommendation" },
+      { "spanish": "valoración", "german": "Bewertung, Einschätzung", "english": "evaluation, assessment" },
+      { "spanish": "subordinación", "german": "Unterordnung (Nebensatzbildung)", "english": "subordination" },
+      { "spanish": "precisión", "german": "Genauigkeit", "english": "accuracy" },
+      { "spanish": "naturalidad", "german": "Natürlichkeit", "english": "naturalness" },
+      { "spanish": "hipótesis", "german": "Hypothese", "english": "hypothesis" },
+
+      { "spanish": "contraste", "german": "Kontrast", "english": "contrast" },
+      { "spanish": "marcadores temporales", "german": "Zeitangaben (Zeitmarker)", "english": "time markers" },
+      { "spanish": "relevancia", "german": "Relevanz", "english": "relevance" },
+      { "spanish": "ser / estar", "german": "ser / estar", "english": "ser / estar" },
+      { "spanish": "estado", "german": "Zustand", "english": "state/condition" },
+      { "spanish": "localización", "german": "Ort, Lokalisierung", "english": "location" },
+      { "spanish": "cambio", "german": "Veränderung", "english": "change" },
+      { "spanish": "ponerse", "german": "werden (Zustand wechseln)", "english": "to become (a state)" },
+      { "spanish": "quedarse", "german": "bleiben/werden (Resultat)", "english": "to end up/become (result)" },
+      { "spanish": "volverse", "german": "werden (dauerhafte Änderung)", "english": "to become (more lasting change)" },
+      { "spanish": "pronombre", "german": "Pronomen", "english": "pronoun" },
+      { "spanish": "objeto directo (OD)", "german": "direktes Objekt", "english": "direct object" },
+      { "spanish": "objeto indirecto (OI)", "german": "indirektes Objekt", "english": "indirect object" },
+      { "spanish": "pronombre átono", "german": "unbetontes Pronomen", "english": "unstressed pronoun" },
+      { "spanish": "colocación (de pronombres)", "german": "Stellung (der Pronomen)", "english": "placement (of pronouns)" },
+      { "spanish": "finalidad", "german": "Zweck", "english": "purpose" },
+      { "spanish": "conector", "german": "Konnektor, Verbindungswort", "english": "connector/linking word" },
+
+      { "spanish": "preposición", "german": "Präposition", "english": "preposition" },
+      { "spanish": "comparativo", "german": "Komparativ", "english": "comparative" },
+      { "spanish": "superlativo", "german": "Superlativ", "english": "superlative" },
+      { "spanish": "relativo (pronombre relativo)", "german": "Relativpronomen", "english": "relative pronoun" },
+      { "spanish": "especificidad", "german": "Bestimmtheit", "english": "specificity" },
+
+      { "spanish": "pedir aclaración", "german": "um Klärung bitten", "english": "to ask for clarification" },
+      { "spanish": "confirmar", "german": "bestätigen", "english": "to confirm" },
+      { "spanish": "reformular", "german": "umformulieren", "english": "to rephrase" },
+      { "spanish": "ganar tiempo", "german": "Zeit gewinnen", "english": "to buy time" },
+      { "spanish": "reclamación", "german": "Reklamation, Beschwerde", "english": "complaint, claim" },
+      { "spanish": "devolución", "german": "Rückgabe", "english": "return (of goods)" },
+      { "spanish": "solicitar", "german": "beantragen, anfordern", "english": "to request" },
+
+      { "spanish": "ortografía", "german": "Rechtschreibung", "english": "spelling/orthography" },
+      { "spanish": "acentuación", "german": "Akzentsetzung", "english": "accentuation" },
+      { "spanish": "tilde", "german": "Akzentzeichen", "english": "accent mark" },
+      { "spanish": "mayúscula", "german": "Großbuchstabe", "english": "capital letter" },
+      { "spanish": "signos de interrogación", "german": "Fragezeichen (¿ ?)", "english": "question marks (¿ ?)" },
+      { "spanish": "signos de exclamación", "german": "Ausrufezeichen (¡ !)", "english": "exclamation marks (¡ !)" },
+      { "spanish": "organización del texto", "german": "Textaufbau", "english": "text organization" },
+      { "spanish": "introducción", "german": "Einleitung", "english": "introduction" },
+      { "spanish": "desarrollo", "german": "Hauptteil", "english": "development/main part" },
+      { "spanish": "cierre", "german": "Schluss", "english": "closing" },
+      { "spanish": "párrafo", "german": "Absatz", "english": "paragraph" },
+      { "spanish": "registro", "german": "Register (Sprachstil)", "english": "register (formality level)" },
+      { "spanish": "formal", "german": "formal", "english": "formal" },
+      { "spanish": "informal", "german": "informell", "english": "informal" },
+      { "spanish": "estrategia", "german": "Strategie", "english": "strategy" },
+      { "spanish": "sinónimo", "german": "Synonym", "english": "synonym" },
+      { "spanish": "gestión del tiempo", "german": "Zeitmanagement", "english": "time management" },
+      { "spanish": "instrucciones", "german": "Anweisungen", "english": "instructions" },
+      { "spanish": "planificar", "german": "planen", "english": "to plan" },
+      { "spanish": "revisar", "german": "überprüfen", "english": "to review" },
+      { "spanish": "concordancia", "german": "Kongruenz (Übereinstimmung)", "english": "agreement (grammar)" }
+    ],
     "por_para": [
       {
         "spanish": "libertad",
@@ -305,6 +434,1342 @@
         "spanish": "centro histórico",
         "german": "historisches Zentrum",
         "english": "historic center"
+      }
+    ],
+    "dialog_01_saludo_presentacion": [
+      {
+        "spanish": "mucho gusto",
+        "german": "sehr erfreut, angenehm",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "¿De dónde eres?",
+        "german": "Woher kommst du?",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "estudiar",
+        "german": "studieren",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "medicina",
+        "german": "Medizin",
+        "english": "medicine"
+      },
+      {
+        "spanish": "universidad",
+        "german": "Universität",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "empresa",
+        "german": "Firma, Unternehmen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "tecnología",
+        "german": "Technologie",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "programador",
+        "german": "Programmierer",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "encantar",
+        "german": "begeistern, lieben (me encanta = ich liebe)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "apartamento",
+        "german": "Wohnung, Apartment",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "celular",
+        "german": "Handy, Mobiltelefon (südamerikanisch)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "cómodo",
+        "german": "bequem, komfortabel",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "hermana menor",
+        "german": "jüngere Schwester",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "hermano mayor",
+        "german": "älterer Bruder",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "tiempo libre",
+        "german": "Freizeit",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "tocar",
+        "german": "spielen (Instrument), berühren",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "guitarra",
+        "german": "Gitarre",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "cocinar",
+        "german": "kochen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "pasear",
+        "german": "spazieren gehen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "quedar",
+        "german": "sich treffen, verabreden",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "igualmente",
+        "german": "ebenfalls, gleichfalls",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "placer",
+        "german": "Vergnügen, Freude",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "¡Hasta luego!",
+        "german": "Bis später!",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "¡Hasta pronto!",
+        "german": "Bis bald!",
+        "english": "[TODO]"
+      }
+    ],
+    "dialog_05_hablar_del_tiempo": [
+      {
+        "spanish": "tiempo",
+        "german": "Wetter, Zeit",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "¿Qué tiempo hace?",
+        "german": "Wie ist das Wetter?",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "hace calor",
+        "german": "es ist heiß",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "hace frío",
+        "german": "es ist kalt",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "hace sol",
+        "german": "es ist sonnig",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "hace viento",
+        "german": "es ist windig",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "grados",
+        "german": "Grad (Temperatur)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "soleado",
+        "german": "sonnig",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "gafas de sol",
+        "german": "Sonnenbrille",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "gorra",
+        "german": "Mütze, Kappe",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "fresco",
+        "german": "kühl, frisch",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "agotador",
+        "german": "anstrengend, ermüdend",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "verano",
+        "german": "Sommer",
+        "english": "summer"
+      },
+      {
+        "spanish": "invierno",
+        "german": "Winter",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "llover",
+        "german": "regnen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "llueve",
+        "german": "es regnet",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "primavera",
+        "german": "Frühling",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "otoño",
+        "german": "Herbst",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "estación",
+        "german": "Jahreszeit",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "pronóstico del tiempo",
+        "german": "Wettervorhersage",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "viento",
+        "german": "Wind",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "playa",
+        "german": "Strand",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "lluvia",
+        "german": "Regen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "relajante",
+        "german": "entspannend",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "mal tiempo",
+        "german": "schlechtes Wetter",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "clima",
+        "german": "Klima",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "caluroso",
+        "german": "heiß, schwül",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "sequía",
+        "german": "Dürre",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "afuera",
+        "german": "draußen",
+        "english": "[TODO]"
+      }
+    ],
+    "dialog_09_decir_la_hora": [
+      {
+        "spanish": "reloj",
+        "german": "Uhr",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "¿Qué hora es?",
+        "german": "Wie spät ist es?",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "son las [hora]",
+        "german": "es ist [Uhr] (für 2-12)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "es la [hora]",
+        "german": "es ist [Uhr] (für 1)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "y cuarto",
+        "german": "Viertel nach",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "y media",
+        "german": "halb (30 Minuten nach)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "en punto",
+        "german": "genau, Punkt",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "atrasado/a",
+        "german": "verspätet, nachgehend",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "empezar",
+        "german": "beginnen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "terminar",
+        "german": "enden, beenden",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "menos cuarto",
+        "german": "Viertel vor",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "mediodía",
+        "german": "Mittag",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "medianoche",
+        "german": "Mitternacht",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "mañana",
+        "german": "Morgen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "tarde",
+        "german": "Nachmittag, später",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "noche",
+        "german": "Nacht, Abend",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "abrir",
+        "german": "öffnen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "cerrar",
+        "german": "schließen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "desayunar",
+        "german": "frühstücken",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "almorzar",
+        "german": "zu Mittag essen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "cenar",
+        "german": "zu Abend essen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "levantarse",
+        "german": "aufstehen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "faltar",
+        "german": "fehlen, noch sein bis",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "tardar",
+        "german": "dauern, brauchen (Zeit)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "puntual",
+        "german": "pünktlich",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "puntualidad",
+        "german": "Pünktlichkeit",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "quedar",
+        "german": "sich treffen, verabreden",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "seguro/a",
+        "german": "sicher",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "preocuparse",
+        "german": "sich sorgen",
+        "english": "to worry"
+      }
+    ],
+    "dialog_13_describir_objetos": [
+      {
+        "spanish": "objeto",
+        "german": "Gegenstand, Objekt",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "describir",
+        "german": "beschreiben",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "celular",
+        "german": "Handy, Mobiltelefon",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "rectangular",
+        "german": "rechteckig",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "pantalla",
+        "german": "Bildschirm, Display",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "marca",
+        "german": "Marke",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "modelo",
+        "german": "Modell",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "funda",
+        "german": "Hülle, Schutzhülle",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "protector",
+        "german": "Schutz, Schutzhülle",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "plástico",
+        "german": "Plastik",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "diseño",
+        "german": "Design, Muster",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "raya",
+        "german": "Kratzer, Ritz",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "esquina",
+        "german": "Ecke",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "superior",
+        "german": "oberer/obere/oberes",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "mediano",
+        "german": "mittelgroß",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "bolso",
+        "german": "Handtasche, Tasche",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "mate",
+        "german": "matt (nicht glänzend)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "brillante",
+        "german": "glänzend, glitzernd",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "taza",
+        "german": "Tasse",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "cerámica",
+        "german": "Keramik",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "asa",
+        "german": "Henkel, Griff",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "redondo",
+        "german": "rund",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "plato",
+        "german": "Teller",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "porcelana",
+        "german": "Porzellan",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "llaves",
+        "german": "Schlüssel",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "plateado",
+        "german": "silberfarben",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "llavero",
+        "german": "Schlüsselanhänger",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "corazón",
+        "german": "Herz",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "madera",
+        "german": "Holz",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "marrón",
+        "german": "braun",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "patas",
+        "german": "Beine (von Möbeln)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "florero",
+        "german": "Vase",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "vidrio",
+        "german": "Glas",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "transparente",
+        "german": "transparent, durchsichtig",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "cuero",
+        "german": "Leder",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "cierre",
+        "german": "Verschluss",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "metal",
+        "german": "Metall",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "dorado",
+        "german": "goldfarben",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "respaldo",
+        "german": "Rückenlehne",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "billetera",
+        "german": "Geldbörse, Portemonnaie",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "gafas de sol",
+        "german": "Sonnenbrille",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "montura",
+        "german": "Brillengestell",
+        "english": "[TODO]"
+      }
+    ],
+    "dialog_18_en_el_transporte_publico": [
+      {
+        "spanish": "transporte público",
+        "german": "öffentlicher Verkehr",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "bus",
+        "german": "Bus",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "metro",
+        "german": "U-Bahn, Metro",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "boleto",
+        "german": "Fahrkarte, Ticket",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "tarjeta",
+        "german": "Karte",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "comprar",
+        "german": "kaufen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "máquina",
+        "german": "Automat, Maschine",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "insertar",
+        "german": "einwerfen, einstecken",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "dinero",
+        "german": "Geld",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "monedas",
+        "german": "Münzen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "conductor",
+        "german": "Fahrer, Busfahrer",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "revisar",
+        "german": "überprüfen, kontrollieren",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "subir",
+        "german": "einsteigen, hochsteigen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "bajar",
+        "german": "aussteigen, heruntersteigen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "parada",
+        "german": "Haltestelle",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "anuncios",
+        "german": "Durchsagen, Ankündigungen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "avisar",
+        "german": "benachrichtigen, Bescheid sagen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "detenerse",
+        "german": "anhalten",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "botón",
+        "german": "Knopf, Taste",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "puerta",
+        "german": "Tür",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "con permiso",
+        "german": "Entschuldigung (um durchzugehen)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "empujar",
+        "german": "schieben, drängen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "estación",
+        "german": "Station, Haltestelle",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "cargar",
+        "german": "aufladen (Geld auf Karte)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "línea",
+        "german": "Linie",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "mapa",
+        "german": "Karte, Plan",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "perderse",
+        "german": "sich verlaufen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "indicaciones",
+        "german": "Anweisungen, Hinweise",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "horarios",
+        "german": "Fahrpläne, Zeiten",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "buses nocturnos",
+        "german": "Nachtbusse",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "disculpe",
+        "german": "Entschuldigung",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "recuperar",
+        "german": "zurückbekommen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "medianoche",
+        "german": "Mitternacht",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "bloquear",
+        "german": "blockieren",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "seleccionar",
+        "german": "auswählen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "destino",
+        "german": "Ziel",
+        "english": "[TODO]"
+      }
+    ],
+    "dialog_23_describir_el_lugar_donde_vives": [
+      {
+        "spanish": "barrio",
+        "german": "Stadtviertel, Viertel",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "tranquilo",
+        "german": "ruhig",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "seguro",
+        "german": "sicher",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "apartamento",
+        "german": "Wohnung, Apartment",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "cómodo",
+        "german": "bequem, komfortabel",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "habitación",
+        "german": "Zimmer",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "sala de estar",
+        "german": "Wohnzimmer",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "vecino",
+        "german": "Nachbar/Nachbarin",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "edificio",
+        "german": "Gebäude",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "piso",
+        "german": "Stockwerk, Etage",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "aproximadamente",
+        "german": "ungefähr",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "cuadra",
+        "german": "Block (Stadtblock)",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "conveniente",
+        "german": "praktisch, günstig",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "transporte público",
+        "german": "öffentlicher Verkehr",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "zona",
+        "german": "Zone, Gegend",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "estación de metro",
+        "german": "U-Bahn-Station",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "autobús",
+        "german": "Bus",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "ruidoso",
+        "german": "laut, geräuschvoll",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "ambiente",
+        "german": "Atmosphäre, Ambiente",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "amigable",
+        "german": "freundlich",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "simpático",
+        "german": "sympathisch, nett",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "saludar",
+        "german": "grüßen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "seguridad",
+        "german": "Sicherheit",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "clima",
+        "german": "Klima, Wetter",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "agradable",
+        "german": "angenehm",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "llevar viviendo",
+        "german": "seit ... wohnen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "contento",
+        "german": "zufrieden, glücklich",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "ascensor",
+        "german": "Aufzug",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "molestar",
+        "german": "stören, belästigen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "espacios verdes",
+        "german": "Grünflächen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "jardín",
+        "german": "Garten",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "calle principal",
+        "german": "Hauptstraße",
+        "english": "[TODO]"
+      }
+    ],
+    "dialog_33_hablar_de_salud_y_ejercicio": [
+      {
+        "spanish": "salud",
+        "german": "Gesundheit",
+        "english": "health"
+      },
+      {
+        "spanish": "ejercicio",
+        "german": "Sport, Übung",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "últimamente",
+        "german": "letztens, in letzter Zeit",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "enérgico/a",
+        "german": "energisch, energiegeladen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "despertarse",
+        "german": "aufwachen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "levantarse",
+        "german": "aufstehen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "ducharse",
+        "german": "duschen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "vestirse",
+        "german": "sich anziehen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "acostumbrarse",
+        "german": "sich gewöhnen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "calentarse",
+        "german": "sich aufwärmen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "estirarse",
+        "german": "sich dehnen, strecken",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "mantener",
+        "german": "aufrechterhalten, halten",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "mantenerte saludable",
+        "german": "gesund bleiben",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "nadar",
+        "german": "schwimmen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "músculos",
+        "german": "Muskeln",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "yoga",
+        "german": "Yoga",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "relajarse",
+        "german": "sich entspannen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "estrés",
+        "german": "Stress",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "alimentarse",
+        "german": "sich ernähren",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "avena",
+        "german": "Haferflocken",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "proteínas",
+        "german": "Proteine, Eiweiß",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "satisfecho/a",
+        "german": "zufrieden, satt",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "ligero/a",
+        "german": "leicht",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "consejos",
+        "german": "Ratschläge",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "flexiones",
+        "german": "Liegestütze",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "sentadillas",
+        "german": "Kniebeugen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "activo/a",
+        "german": "aktiv",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "evitar",
+        "german": "vermeiden",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "pantallas",
+        "german": "Bildschirme",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "respirar",
+        "german": "atmen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "profundamente",
+        "german": "tief",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "calmarse",
+        "german": "sich beruhigen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "ponerse metas",
+        "german": "sich Ziele setzen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "alcanzable",
+        "german": "erreichbar",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "premiarse",
+        "german": "sich belohnen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "entusiasmado/a",
+        "german": "begeistert",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "hábito",
+        "german": "Gewohnheit",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "inspirador/a",
+        "german": "inspirierend",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "lograr",
+        "german": "erreichen, schaffen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "contar con",
+        "german": "zählen auf, sich verlassen auf",
+        "english": "[TODO]"
+      }
+    ],
+    "dialog_45_hablar_de_medio_ambiente": [
+      {
+        "spanish": "medio ambiente",
+        "german": "Umwelt",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "basura",
+        "german": "Müll, Abfall",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "por todas partes",
+        "german": "überall",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "recoger",
+        "german": "sammeln, aufheben",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "reutilizable",
+        "german": "wiederverwendbar",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "reciclar",
+        "german": "recyceln",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "separar",
+        "german": "trennen, sortieren",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "contenedor",
+        "german": "Behälter, Container",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "ahorrar",
+        "german": "sparen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "energía",
+        "german": "Energie",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "bombilla",
+        "german": "Glühbirne",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "bajo consumo",
+        "german": "niedriger Verbrauch",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "desconectar",
+        "german": "abstecken, trennen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "aparato electrónico",
+        "german": "elektronisches Gerät",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "voluntario",
+        "german": "Freiwilliger/Freiwillige",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "participar",
+        "german": "teilnehmen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "oportunidad",
+        "german": "Gelegenheit, Chance",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "comunidad",
+        "german": "Gemeinschaft",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "guantes",
+        "german": "Handschuhe",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "cambio climático",
+        "german": "Klimawandel",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "educativo",
+        "german": "lehrreich, bildend",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "proteger",
+        "german": "schützen",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "planeta",
+        "german": "Planet",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "producto local",
+        "german": "lokales Produkt",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "transportar",
+        "german": "transportieren",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "productor",
+        "german": "Produzent, Erzeuger",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "reducir",
+        "german": "reduzieren, verringern",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "consumo",
+        "german": "Verbrauch, Konsum",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "vegetariano",
+        "german": "Vegetarier",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "legumbre",
+        "german": "Hülsenfrucht",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "conciencia",
+        "german": "Bewusstsein",
+        "english": "[TODO]"
+      },
+      {
+        "spanish": "concreto",
+        "german": "konkret",
+        "english": "[TODO]"
       }
     ]
   }

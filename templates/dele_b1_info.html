@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block title %}DELE B1 Information - Jona's Spanish Quiz{% endblock %}
+
+{% block content %}
+<div class="info-page">
+  <div class="info-page-header">
+    <div>
+      <h2 class="info-title">DELE B1 Information</h2>
+      <p class="info-subtitle">
+        Qué necesitas dominar para aprobar el examen DELE B1 (competencias, gramática, tiempos verbales, temas y léxico).
+      </p>
+    </div>
+    <div class="info-header-actions">
+      <a href="{{ url_for('index') }}" class="btn btn-secondary btn-small">Volver al menú principal</a>
+    </div>
+  </div>
+
+  <div class="info-grid">
+    <section class="info-frame frame-blue">
+      <h3>Qué acredita el DELE B1 (<abbr class="gloss" title="DE: Schwellenstufe | EN: threshold level">nivel umbral</abbr>)</h3>
+      <ul>
+        <li><abbr class="gloss" title="DE: verstehen | EN: to understand">Comprender</abbr> los <abbr class="gloss" title="DE: Hauptpunkte | EN: main points">puntos principales</abbr> de <abbr class="gloss" title="DE: gesprochener Text | EN: spoken text">textos orales</abbr> y <abbr class="gloss" title="DE: schriftlicher Text | EN: written text">escritos</abbr> (<abbr class="gloss" title="DE: Standardsprache | EN: standard language">variedades normalizadas</abbr>) sobre <abbr class="gloss" title="DE: bekannte Themen | EN: familiar topics">asuntos conocidos</abbr>: trabajo, estudio y <abbr class="gloss" title="DE: Alltag | EN: everyday life">vida cotidiana</abbr>.</li>
+        <li><abbr class="gloss" title="DE: zurechtkommen | EN: to cope, to manage">Desenvolverse</abbr> en la mayoría de <abbr class="gloss" title="DE: typische Situationen | EN: everyday situations">situaciones habituales</abbr> en esos ámbitos.</li>
+        <li>Producir textos <abbr class="gloss" title="DE: einfach | EN: simple">sencillos</abbr> y <abbr class="gloss" title="DE: kohärent, stimmig | EN: coherent">coherentes</abbr> sobre <abbr class="gloss" title="DE: Thema | EN: topic">temas</abbr> conocidos o de <abbr class="gloss" title="DE: persönliches Interesse | EN: personal interest">interés personal</abbr>: <abbr class="gloss" title="DE: Erfahrungen | EN: experiences">experiencias</abbr>, <abbr class="gloss" title="DE: Ereignisse | EN: events">acontecimientos</abbr>, <abbr class="gloss" title="DE: Wünsche | EN: wishes">deseos</abbr>, <abbr class="gloss" title="DE: Pläne | EN: plans">planes</abbr> y <abbr class="gloss" title="DE: Meinungen | EN: opinions">opiniones</abbr>.</li>
+      </ul>
+      <p class="info-source">
+        Fuentes: Instituto Cervantes — página del examen DELE B1 y guía/especificaciones oficiales.
+      </p>
+    </section>
+
+    <section class="info-frame frame-amber">
+      <h3><abbr class="gloss" title="DE: Aufbau der Prüfung | EN: exam structure">Estructura del examen</abbr> (<abbr class="gloss" title="DE: sehr kurz zusammengefasst | EN: very briefly summarized">muy resumida</abbr>)</h3>
+      <ul>
+        <li><strong><abbr class="gloss" title="DE: Leseverstehen | EN: reading comprehension">Comprensión de lectura</abbr></strong> (70 min): tareas con <abbr class="gloss" title="DE: Anzeigen | EN: ads">anuncios</abbr>, <abbr class="gloss" title="DE: Nachrichten | EN: messages">mensajes</abbr>, <abbr class="gloss" title="DE: Informationstexte | EN: informative texts">textos informativos</abbr> y ejercicios de <abbr class="gloss" title="DE: Kohäsion (Textzusammenhang) | EN: cohesion">cohesión</abbr> y <abbr class="gloss" title="DE: lexikalisch-grammatische Auswahl | EN: lexico-grammatical choice">elección léxico-gramatical</abbr>.</li>
+        <li><strong><abbr class="gloss" title="DE: Hörverstehen | EN: listening comprehension">Comprensión auditiva</abbr></strong> (40 min): <abbr class="gloss" title="DE: Hinweise, Durchsagen | EN: notices, announcements">avisos</abbr>, <abbr class="gloss" title="DE: Monologe | EN: monologues">monólogos</abbr>, <abbr class="gloss" title="DE: Nachrichten | EN: news items">noticias</abbr> y <abbr class="gloss" title="DE: informelle Gespräche | EN: informal conversations">conversaciones informales</abbr>.</li>
+        <li><strong><abbr class="gloss" title="DE: schriftlicher Ausdruck und Interaktion | EN: written expression and interaction">Expresión e interacción escritas</abbr></strong> (60 min): 2 <abbr class="gloss" title="DE: Aufgaben | EN: tasks">tareas</abbr> (p. ej., mensaje/carta/foro 100–120 palabras; redacción 130–150 palabras).</li>
+        <li><strong><abbr class="gloss" title="DE: mündlicher Ausdruck und Interaktion | EN: oral expression and interaction">Expresión e interacción orales</abbr></strong> (15 min + 15 min <abbr class="gloss" title="DE: Vorbereitung | EN: preparation">preparación</abbr>): <abbr class="gloss" title="DE: kurze Präsentation | EN: short presentation">presentación breve</abbr>, conversación, <abbr class="gloss" title="DE: Fotobeschreibung | EN: photo description">descripción de foto</abbr> + conversación, diálogo en <abbr class="gloss" title="DE: simulierte Situation | EN: simulated situation">situación simulada</abbr>.</li>
+      </ul>
+    </section>
+
+    <section class="info-frame frame-green">
+      <h3>Tiempos y modos verbales a dominar</h3>
+      <div class="two-col">
+        <div>
+          <h4><abbr class="gloss" title="DE: Indikativ | EN: indicative">Indicativo</abbr></h4>
+          <ul>
+            <li>Presente</li>
+            <li><abbr class="gloss" title="DE: Imperfekt (Spanisch) | EN: imperfect (past) tense">Pretérito imperfecto</abbr></li>
+            <li><abbr class="gloss" title="DE: Indefinido (Spanisch) | EN: preterite (simple past)">Pretérito indefinido</abbr></li>
+            <li><abbr class="gloss" title="DE: Perfekt (Spanisch) | EN: present perfect">Pretérito perfecto</abbr></li>
+            <li><abbr class="gloss" title="DE: Plusquamperfekt (Spanisch) | EN: pluperfect">Pretérito pluscuamperfecto</abbr></li>
+            <li><abbr class="gloss" title="DE: Futur | EN: future">Futuro imperfecto</abbr></li>
+            <li><abbr class="gloss" title="DE: Konditional | EN: conditional">Condicional simple</abbr></li>
+          </ul>
+        </div>
+        <div>
+          <h4><abbr class="gloss" title="DE: Subjuntivo | EN: subjunctive">Subjuntivo</abbr> e <abbr class="gloss" title="DE: Imperativ | EN: imperative">imperativo</abbr></h4>
+          <ul>
+            <li><abbr class="gloss" title="DE: Subjuntivo | EN: subjunctive">Subjuntivo</abbr>: presente, imperfecto; y uso frecuente del perfecto y del pluscuamperfecto en contextos típicos (<abbr class="gloss" title="DE: Zweifel | EN: doubt">duda</abbr>, <abbr class="gloss" title="DE: Wunsch | EN: wish">deseo</abbr>, <abbr class="gloss" title="DE: Bewertung, Einschätzung | EN: evaluation, assessment">valoración</abbr>, <abbr class="gloss" title="DE: Unterordnung (Nebensatzbildung) | EN: subordination">subordinación</abbr>).</li>
+            <li>Imperativo: afirmativo y negativo (pronombres átonos y colocación).</li>
+            <li><abbr class="gloss" title="DE: unpersönliche Verbform | EN: non-finite verb form">Formas no personales</abbr>: <abbr class="gloss" title="DE: Infinitiv | EN: infinitive">infinitivo</abbr>, <abbr class="gloss" title="DE: Gerundium | EN: gerund">gerundio</abbr> y <abbr class="gloss" title="DE: Partizip | EN: participle">participio</abbr> (<abbr class="gloss" title="DE: Verbalperiphrase | EN: verbal periphrasis">perífrasis (verbal)</abbr>, <abbr class="gloss" title="DE: Erzählung | EN: narration">narración</abbr> y <abbr class="gloss" title="DE: Beschreibung | EN: description">descripción</abbr>).</li>
+          </ul>
+        </div>
+      </div>
+      <p class="info-note">
+        Nota práctica: en B1 se evalúa el uso comunicativo correcto más que “saber la etiqueta del tiempo”; prioriza <abbr class="gloss" title="DE: Genauigkeit | EN: accuracy">precisión</abbr> y <abbr class="gloss" title="DE: Natürlichkeit | EN: naturalness">naturalidad</abbr> en narración (pasado), planes (futuro/<abbr class="gloss" title="DE: Verbalperiphrase | EN: verbal periphrasis">perífrasis</abbr>) y opinión/<abbr class="gloss" title="DE: Hypothese | EN: hypothesis">hipótesis</abbr> (condicional).
+      </p>
+    </section>
+
+    <section class="info-frame frame-purple">
+      <h3>Gramática y “especialidades” (lo que más cae)</h3>
+      <ul>
+        <li><strong><abbr class="gloss" title="DE: Kontraste | EN: contrasts">Contrastes</abbr> en pasado</strong>: imperfecto vs indefinido; perfecto vs indefinido (<abbr class="gloss" title="DE: Zeitangaben (Zeitmarker) | EN: time markers">marcadores temporales</abbr>, <abbr class="gloss" title="DE: Relevanz | EN: relevance">relevancia</abbr>).</li>
+        <li><strong><abbr class="gloss" title="DE: ser / estar | EN: ser / estar">Ser / estar</abbr></strong> (incl. <abbr class="gloss" title="DE: Zustände | EN: states/conditions">estados</abbr>, <abbr class="gloss" title="DE: Ort, Lokalisierung | EN: location">localización</abbr>, <abbr class="gloss" title="DE: Veränderungen | EN: changes">cambios</abbr>: <abbr class="gloss" title="DE: werden (Zustand wechseln) | EN: to become (a state)">ponerse</abbr>/<abbr class="gloss" title="DE: bleiben/werden (Resultat) | EN: to end up/become (result)">quedarse</abbr>/<abbr class="gloss" title="DE: werden (dauerhafte Änderung) | EN: to become (more lasting change)">volverse</abbr>).</li>
+        <li><strong><abbr class="gloss" title="DE: Pronomen | EN: pronouns">Pronombres</abbr></strong>: <abbr class="gloss" title="DE: direktes Objekt | EN: direct object">OD (objeto directo)</abbr>/<abbr class="gloss" title="DE: indirektes Objekt | EN: indirect object">OI (objeto indirecto)</abbr> (lo/la/los/las; le/les), <em>se</em> (reflexivo, recíproco, dativo), y <abbr class="gloss" title="DE: Stellung der Pronomen | EN: placement of pronouns">colocación (de pronombres)</abbr> con infinitivo/gerundio/imperativo.</li>
+        <li><strong>Subjuntivo esencial</strong>: deseos, recomendaciones, emociones, valoración (<em>Es importante que…</em>), duda/negación (<em>No creo que…</em>), finalidad (<em>para que</em>), tiempo futuro (<em>cuando/luego que/antes de que…</em>).</li>
+        <li><strong><abbr class="gloss" title="DE: Verbalperiphrasen | EN: verbal periphrases">Perífrasis frecuentes</abbr></strong>: ir a + inf., tener que + inf., poder/deber, <abbr class="gloss" title="DE: gerade ... getan haben | EN: to have just done">acabar de</abbr>, estar + gerundio, seguir + gerundio/inf., soler.</li>
+        <li><strong>Preposiciones clave</strong>: por/para; a/en/de/desde/hasta; verbos con preposición.</li>
+        <li><strong><abbr class="gloss" title="DE: Komparative | EN: comparatives">Comparativos</abbr> y <abbr class="gloss" title="DE: Superlative | EN: superlatives">superlativos</abbr></strong>: más/menos que, tan…como, -ísimo, el/la más…</li>
+        <li><strong><abbr class="gloss" title="DE: Relativpronomen | EN: relative pronouns">Relativos</abbr> y <abbr class="gloss" title="DE: Unterordnung (Nebensatzbildung) | EN: subordination">subordinación</abbr></strong>: que/quien/donde/cuando/como; uso indicativo/subjuntivo según <abbr class="gloss" title="DE: Bestimmtheit | EN: specificity">especificidad</abbr>.</li>
+        <li><strong><abbr class="gloss" title="DE: Konnektoren, Verbindungswörter | EN: connectors, linking words">Conectores</abbr> y <abbr class="gloss" title="DE: Kohäsion (Textzusammenhang) | EN: cohesion">cohesión</abbr></strong>: porque/como/aunque, sin embargo, por eso, además, primero/entonces/al final, por un lado… por otro…</li>
+      </ul>
+    </section>
+
+    <section class="info-frame frame-teal">
+      <h3>Funciones comunicativas (lo que debes saber hacer)</h3>
+      <ul>
+        <li>Pedir y dar información (detalles, horarios, direcciones, condiciones).</li>
+        <li>Describir personas, lugares, objetos y experiencias.</li>
+        <li>Narrar hechos pasados (con orden y marcadores temporales).</li>
+        <li>Expresar opinión, acuerdo/desacuerdo, preferencias y comparaciones.</li>
+        <li>Hacer planes: proponer, invitar, aceptar/rechazar, negociar una cita.</li>
+        <li>Dar consejos y recomendaciones; expresar obligación/posibilidad.</li>
+        <li>Resolver situaciones cotidianas: <abbr class="gloss" title="DE: Reklamationen | EN: complaints">reclamaciones</abbr> sencillas, cambios/<abbr class="gloss" title="DE: Rückgaben | EN: returns (of goods)">devoluciones</abbr>, <abbr class="gloss" title="DE: beantragen, anfordern | EN: to request">solicitar</abbr> un servicio o información.</li>
+        <li>Interactuar: <abbr class="gloss" title="DE: um Klärung bitten | EN: to ask for clarification">pedir aclaración</abbr>, <abbr class="gloss" title="DE: bestätigen | EN: to confirm">confirmar</abbr> que has entendido, <abbr class="gloss" title="DE: umformulieren | EN: to rephrase">reformular</abbr>, <abbr class="gloss" title="DE: Zeit gewinnen | EN: to buy time">ganar tiempo</abbr> con expresiones útiles.</li>
+      </ul>
+    </section>
+
+    <section class="info-frame frame-rose">
+      <h3>Temas y campos de vocabulario (típicos de B1)</h3>
+      <div class="two-col">
+        <ul>
+          <li><strong>Vida diaria</strong>: rutinas, casa, ciudad, transporte, compras, comida.</li>
+          <li><strong>Relaciones</strong>: familia, amistad, carácter, sentimientos y estados de ánimo.</li>
+          <li><strong>Ocio</strong>: aficiones, cultura, deporte, tecnología básica.</li>
+          <li><strong>Viajes</strong>: alojamiento, turismo, incidencias, orientación.</li>
+          <li><strong>Salud</strong>: cuerpo, síntomas comunes, hábitos saludables, citas médicas.</li>
+        </ul>
+        <ul>
+          <li><strong>Estudio y trabajo</strong>: formación, experiencia, tareas, entrevistas simples.</li>
+          <li><strong>Servicios</strong>: banco, correos, administración, reservas, reparaciones.</li>
+          <li><strong>Medio ambiente</strong> (básico): reciclaje, clima, consumo responsable.</li>
+          <li><strong>Sociedad</strong> (básico): noticias simples, normas, convivencia.</li>
+          <li><strong>Opinión</strong>: expresar causas, consecuencias, ventajas e inconvenientes.</li>
+        </ul>
+      </div>
+      <p class="info-note">
+        Consejo: aprende vocabulario por “situaciones” (rol + objetivo + frases útiles), no solo listas. En el oral, las fórmulas de cortesía cuentan mucho.
+      </p>
+    </section>
+
+    <section class="info-frame frame-slate">
+      <h3>Además (muy importante para aprobar)</h3>
+      <ul>
+        <li><strong><abbr class="gloss" title="DE: Rechtschreibung | EN: spelling/orthography">Ortografía</abbr> y <abbr class="gloss" title="DE: Akzentsetzung | EN: accentuation">acentuación</abbr></strong> básicas (<abbr class="gloss" title="DE: Akzentzeichen | EN: accent marks">tildes</abbr>, <abbr class="gloss" title="DE: Großbuchstaben | EN: capital letters">mayúsculas</abbr>, <abbr class="gloss" title="DE: Fragezeichen (¿ ?) | EN: question marks (¿ ?)">signos de interrogación</abbr>/<abbr class="gloss" title="DE: Ausrufezeichen (¡ !) | EN: exclamation marks (¡ !)">exclamación</abbr>).</li>
+        <li><strong><abbr class="gloss" title="DE: Textaufbau | EN: text organization">Organización del texto</abbr></strong>: <abbr class="gloss" title="DE: Einleitung | EN: introduction">introducción</abbr> breve, <abbr class="gloss" title="DE: Hauptteil | EN: development/main part">desarrollo</abbr> claro, <abbr class="gloss" title="DE: Schluss | EN: closing">cierre</abbr>; <abbr class="gloss" title="DE: Absätze | EN: paragraphs">párrafos</abbr>; <abbr class="gloss" title="DE: Konnektoren, Verbindungswörter | EN: connectors, linking words">conectores</abbr>.</li>
+        <li><strong><abbr class="gloss" title="DE: Register (Sprachstil) | EN: register (formality level)">Registro</abbr></strong>: <abbr class="gloss" title="DE: informell | EN: informal">informal</abbr> vs <abbr class="gloss" title="DE: formal | EN: formal">formal</abbr> (saludos/despedidas, usted/tú) según la tarea.</li>
+        <li><strong><abbr class="gloss" title="DE: Strategien | EN: strategies">Estrategias</abbr></strong>: pedir repetición, confirmar información, <abbr class="gloss" title="DE: umformulieren | EN: to rephrase">reformular</abbr>, usar <abbr class="gloss" title="DE: Synonyme | EN: synonyms">sinónimos</abbr> cuando falta una palabra.</li>
+        <li><strong><abbr class="gloss" title="DE: Zeitmanagement | EN: time management">Gestión del tiempo</abbr></strong>: leer <abbr class="gloss" title="DE: Anweisungen | EN: instructions">instrucciones</abbr>, <abbr class="gloss" title="DE: planen | EN: to plan">planificar</abbr> 2–3 ideas, <abbr class="gloss" title="DE: überprüfen | EN: to review">revisar</abbr> al final (errores de <abbr class="gloss" title="DE: Kongruenz (Übereinstimmung) | EN: agreement (grammar)">concordancia</abbr>/tiempos).</li>
+      </ul>
+    </section>
+
+    <section class="info-frame frame-check">
+      <h3>Checklist rápido</h3>
+      <ul class="checklist">
+        <li>¿Puedo contar una experiencia pasada con conectores (primero, luego, al final) sin mezclar tiempos?</li>
+        <li>¿Puedo describir una foto (qué hay, dónde, qué están haciendo, qué parece/posible) y opinar?</li>
+        <li>¿Puedo escribir un mensaje formal sencillo (petición, queja, información) con saludo y cierre?</li>
+        <li>¿Uso bien por/para, ser/estar, y pronombres (se lo, me lo, dímelo)?</li>
+        <li>¿Sé usar el subjuntivo en frases típicas (quiero que…, es importante que…, cuando… [futuro])?</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <div class="info-footer-actions">
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Volver al menú principal</a>
+  </div>
+</div>
+{% endblock %}
+

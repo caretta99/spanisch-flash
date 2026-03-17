@@ -3,9 +3,45 @@ import json
 import os
 import random
 from utils.data_validator import load_and_validate_data, load_and_validate_por_para_data, load_and_validate_vocabulary_data
+from utils.settings_store import load_settings as load_persisted_settings, save_settings as save_persisted_settings, validate_settings
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Secret key for session management
+
+# Persisted options storage (global, server-side)
+os.makedirs(app.instance_path, exist_ok=True)
+app.config.setdefault("SETTINGS_FILE_PATH", os.path.join(app.instance_path, "quiz_settings.json"))
+
+
+def _get_settings_file_path() -> str:
+    return app.config.get("SETTINGS_FILE_PATH", os.path.join(app.instance_path, "quiz_settings.json"))
+
+
+def _load_persisted() -> dict:
+    return load_persisted_settings(_get_settings_file_path()) or {"conjugations": {}, "porpara": {}, "vocab": {}}
+
+
+def _save_persisted(settings: dict) -> None:
+    save_persisted_settings(_get_settings_file_path(), settings)
+
+
+def _filter_list(values, allowed_set):
+    if not isinstance(values, list):
+        return []
+    return [v for v in values if v in allowed_set]
+
+
+def _persist_section(section_name: str, section_payload: dict) -> None:
+    settings = _load_persisted()
+    if not isinstance(settings, dict):
+        settings = {"conjugations": {}, "porpara": {}, "vocab": {}}
+    settings[section_name] = section_payload
+    _save_persisted(validate_settings(settings))
+
+# Person sets
+DEFAULT_PERSONS = ['yo', 'tu', 'el/ella/usted', 'nosotros', 'vosotros', 'ellos/ellas/ustedes']
+IMPERATIVE_TENSES = {'imperativo_afirmativo', 'imperativo_negativo'}
+IMPERATIVE_PERSONS = ['tu', 'el/ella/usted', 'nosotros', 'vosotros', 'ellos/ellas/ustedes']
 
 # Load and validate data on startup
 DATA_FILE = os.path.join(os.path.dirname(__file__), 'data', 'conjugations.json')
@@ -19,7 +55,16 @@ vocabulary_data = load_and_validate_vocabulary_data(VOCABULARY_FILE)
 
 # Vocab set display names mapping
 VOCAB_SET_NAMES = {
-    'por_para': 'Por/Para Vocabulary'
+    'dele_b1_info': 'DELE B1 — Info Page',
+    'por_para': 'Por/Para Vocabulary',
+    'dialog_01_saludo_presentacion': 'Dialog 01 — Saludo y Presentación',
+    'dialog_05_hablar_del_tiempo': 'Dialog 05 — Hablar del Tiempo',
+    'dialog_09_decir_la_hora': 'Dialog 09 — Decir la Hora',
+    'dialog_13_describir_objetos': 'Dialog 13 — Describir Objetos',
+    'dialog_18_en_el_transporte_publico': 'Dialog 18 — En el Transporte Público',
+    'dialog_23_describir_el_lugar_donde_vives': 'Dialog 23 — Describir el Lugar donde Vives',
+    'dialog_33_hablar_de_salud_y_ejercicio': 'Dialog 33 — Hablar de Salud y Ejercicio',
+    'dialog_45_hablar_de_medio_ambiente': 'Dialog 45 — Hablar de Medio Ambiente',
 }
 
 # Category display names mapping
@@ -47,6 +92,11 @@ def index():
     """Main page with quiz selection"""
     return render_template('index.html')
 
+@app.route("/info/dele-b1")
+def dele_b1_information():
+    """Information page about DELE B1 competencies."""
+    return render_template("dele_b1_info.html")
+
 @app.route('/quiz/conjugations/save-settings', methods=['POST'])
 def save_settings():
     """Save user settings without starting quiz"""
@@ -66,6 +116,18 @@ def save_settings():
     session['saved_seconds_per_answer'] = seconds_per_answer
     session['saved_num_questions'] = num_questions
     session['saved_contestants'] = contestant_names
+
+    _persist_section(
+        "conjugations",
+        {
+            "selected_verbs": selected_verbs,
+            "selected_tenses": selected_tenses,
+            "seconds_per_question": seconds_per_question,
+            "seconds_per_answer": seconds_per_answer,
+            "num_questions": num_questions,
+            "contestants": contestant_names,
+        },
+    )
     
     return redirect(url_for('index'))
 
@@ -80,15 +142,49 @@ def conjugations_options():
     for verb_data in quiz_data.values():
         tenses.update(verb_data.keys())
     tenses = sorted(list(tenses))
-    
-    # Load saved preferences from session
+
+    persisted = _load_persisted().get("conjugations", {}) or {}
+    verbs_set = set(verbs)
+    tenses_set = set(tenses)
+
+    # Defaults from current data
+    selected_verbs = verbs
+    selected_tenses = tenses
+    seconds_per_question = 3
+    seconds_per_answer = 4
+    num_questions = 10
+    contestants = []
+
+    # Apply persisted (filtered to current data)
+    if isinstance(persisted, dict) and persisted:
+        persisted_verbs = _filter_list(persisted.get("selected_verbs"), verbs_set)
+        persisted_tenses = _filter_list(persisted.get("selected_tenses"), tenses_set)
+        selected_verbs = persisted_verbs or selected_verbs
+        selected_tenses = persisted_tenses or selected_tenses
+        if isinstance(persisted.get("seconds_per_question"), int):
+            seconds_per_question = persisted["seconds_per_question"]
+        if isinstance(persisted.get("seconds_per_answer"), int):
+            seconds_per_answer = persisted["seconds_per_answer"]
+        if isinstance(persisted.get("num_questions"), int):
+            num_questions = persisted["num_questions"]
+        if isinstance(persisted.get("contestants"), list):
+            contestants = [c for c in persisted.get("contestants", []) if isinstance(c, str) and c.strip()]
+
+    # Session overrides (current behavior)
+    selected_verbs = _filter_list(session.get("saved_verbs", selected_verbs), verbs_set) or selected_verbs
+    selected_tenses = _filter_list(session.get("saved_tenses", selected_tenses), tenses_set) or selected_tenses
+    seconds_per_question = session.get("saved_seconds_per_question", seconds_per_question)
+    seconds_per_answer = session.get("saved_seconds_per_answer", seconds_per_answer)
+    num_questions = session.get("saved_num_questions", num_questions)
+    contestants = session.get("saved_contestants", contestants)
+
     saved_prefs = {
-        'selected_verbs': session.get('saved_verbs', verbs),  # Default to all verbs
-        'selected_tenses': session.get('saved_tenses', tenses),  # Default to all tenses
-        'seconds_per_question': session.get('saved_seconds_per_question', 3),
-        'seconds_per_answer': session.get('saved_seconds_per_answer', 4),
-        'num_questions': session.get('saved_num_questions', 10),
-        'contestants': session.get('saved_contestants', [])
+        "selected_verbs": selected_verbs,
+        "selected_tenses": selected_tenses,
+        "seconds_per_question": seconds_per_question,
+        "seconds_per_answer": seconds_per_answer,
+        "num_questions": num_questions,
+        "contestants": contestants,
     }
     
     return render_template('options.html', 
@@ -122,7 +218,8 @@ def start_quiz():
     for _ in range(num_questions):
         verb = random.choice(selected_verbs)
         tense = random.choice(selected_tenses)
-        person = random.choice(['yo', 'tu', 'el/ella/usted', 'nosotros', 'vosotros', 'ellos/ellas/ustedes'])
+        persons = IMPERATIVE_PERSONS if tense in IMPERATIVE_TENSES else DEFAULT_PERSONS
+        person = random.choice(persons)
         
         answer = quiz_data[verb][tense][person]
         base_questions.append({
@@ -173,6 +270,18 @@ def start_quiz():
     session['saved_seconds_per_answer'] = seconds_per_answer
     session['saved_num_questions'] = num_questions
     session['saved_contestants'] = contestant_names
+
+    _persist_section(
+        "conjugations",
+        {
+            "selected_verbs": selected_verbs,
+            "selected_tenses": selected_tenses,
+            "seconds_per_question": seconds_per_question,
+            "seconds_per_answer": seconds_per_answer,
+            "num_questions": num_questions,
+            "contestants": contestant_names,
+        },
+    )
     
     return redirect(url_for('run_quiz'))
 
@@ -236,15 +345,57 @@ def porpara_options():
     # Get all para categories
     para_categories = {key: PARA_CATEGORY_NAMES.get(key, key.replace('_', ' ').title()) 
                       for key in para_data.keys()}
-    
-    # Load saved preferences from session
+
+    persisted = _load_persisted().get("porpara", {}) or {}
+    por_keys = list(por_categories.keys())
+    para_keys = list(para_categories.keys())
+    por_set = set(por_keys)
+    para_set = set(para_keys)
+
+    # Defaults from current data
+    selected_por_categories = por_keys
+    selected_para_categories = para_keys
+    seconds_per_question = 7
+    seconds_per_answer = 4
+    num_questions = 10
+    contestants = []
+
+    # Apply persisted (filtered to current data)
+    if isinstance(persisted, dict) and persisted:
+        persisted_por = _filter_list(persisted.get("selected_por_categories"), por_set)
+        persisted_para = _filter_list(persisted.get("selected_para_categories"), para_set)
+        selected_por_categories = persisted_por or selected_por_categories
+        selected_para_categories = persisted_para or selected_para_categories
+        if isinstance(persisted.get("seconds_per_question"), int):
+            seconds_per_question = persisted["seconds_per_question"]
+        if isinstance(persisted.get("seconds_per_answer"), int):
+            seconds_per_answer = persisted["seconds_per_answer"]
+        if isinstance(persisted.get("num_questions"), int):
+            num_questions = persisted["num_questions"]
+        if isinstance(persisted.get("contestants"), list):
+            contestants = [c for c in persisted.get("contestants", []) if isinstance(c, str) and c.strip()]
+
+    # Session overrides
+    selected_por_categories = _filter_list(
+        session.get("porpara_saved_por_categories", selected_por_categories),
+        por_set,
+    ) or selected_por_categories
+    selected_para_categories = _filter_list(
+        session.get("porpara_saved_para_categories", selected_para_categories),
+        para_set,
+    ) or selected_para_categories
+    seconds_per_question = session.get("porpara_saved_seconds_per_question", seconds_per_question)
+    seconds_per_answer = session.get("porpara_saved_seconds_per_answer", seconds_per_answer)
+    num_questions = session.get("porpara_saved_num_questions", num_questions)
+    contestants = session.get("porpara_saved_contestants", contestants)
+
     saved_prefs = {
-        'selected_por_categories': session.get('porpara_saved_por_categories', list(por_categories.keys())),
-        'selected_para_categories': session.get('porpara_saved_para_categories', list(para_categories.keys())),
-        'seconds_per_question': session.get('porpara_saved_seconds_per_question', 7),
-        'seconds_per_answer': session.get('porpara_saved_seconds_per_answer', 4),
-        'num_questions': session.get('porpara_saved_num_questions', 10),
-        'contestants': session.get('porpara_saved_contestants', [])
+        "selected_por_categories": selected_por_categories,
+        "selected_para_categories": selected_para_categories,
+        "seconds_per_question": seconds_per_question,
+        "seconds_per_answer": seconds_per_answer,
+        "num_questions": num_questions,
+        "contestants": contestants,
     }
     
     return render_template('por_para_options.html',
@@ -271,6 +422,18 @@ def porpara_save_settings():
     session['porpara_saved_seconds_per_answer'] = seconds_per_answer
     session['porpara_saved_num_questions'] = num_questions
     session['porpara_saved_contestants'] = contestant_names
+
+    _persist_section(
+        "porpara",
+        {
+            "selected_por_categories": selected_por_categories,
+            "selected_para_categories": selected_para_categories,
+            "seconds_per_question": seconds_per_question,
+            "seconds_per_answer": seconds_per_answer,
+            "num_questions": num_questions,
+            "contestants": contestant_names,
+        },
+    )
     
     return redirect(url_for('index'))
 
@@ -366,6 +529,18 @@ def porpara_start_quiz():
     session['porpara_saved_seconds_per_answer'] = seconds_per_answer
     session['porpara_saved_num_questions'] = num_questions
     session['porpara_saved_contestants'] = contestant_names
+
+    _persist_section(
+        "porpara",
+        {
+            "selected_por_categories": selected_por_categories,
+            "selected_para_categories": selected_para_categories,
+            "seconds_per_question": seconds_per_question,
+            "seconds_per_answer": seconds_per_answer,
+            "num_questions": num_questions,
+            "contestants": contestant_names,
+        },
+    )
     
     return redirect(url_for('porpara_run_quiz'))
 
@@ -427,15 +602,52 @@ def vocab_options():
         display_name = VOCAB_SET_NAMES.get(set_key, set_key.replace('_', ' ').title())
         word_count = len(vocab_sets[set_key]) if isinstance(vocab_sets[set_key], list) else 0
         vocab_set_list.append((set_key, display_name, word_count))
-    
-    # Load saved preferences from session
+
+    persisted = _load_persisted().get("vocab", {}) or {}
+    available_set_keys = [set_key for set_key, _, _ in vocab_set_list]
+    available_set_set = set(available_set_keys)
+
+    # Defaults from current data
+    selected_vocab_sets = available_set_keys
+    direction = "spanish_to_german"
+    seconds_per_question = 5
+    seconds_per_answer = 4
+    num_questions = 10
+    contestants = []
+
+    # Apply persisted (filtered to current data)
+    if isinstance(persisted, dict) and persisted:
+        persisted_sets = _filter_list(persisted.get("selected_vocab_sets"), available_set_set)
+        selected_vocab_sets = persisted_sets or selected_vocab_sets
+        if isinstance(persisted.get("direction"), str):
+            direction = persisted["direction"]
+        if isinstance(persisted.get("seconds_per_question"), int):
+            seconds_per_question = persisted["seconds_per_question"]
+        if isinstance(persisted.get("seconds_per_answer"), int):
+            seconds_per_answer = persisted["seconds_per_answer"]
+        if isinstance(persisted.get("num_questions"), int):
+            num_questions = persisted["num_questions"]
+        if isinstance(persisted.get("contestants"), list):
+            contestants = [c for c in persisted.get("contestants", []) if isinstance(c, str) and c.strip()]
+
+    # Session overrides
+    selected_vocab_sets = _filter_list(
+        session.get("vocab_saved_vocab_sets", selected_vocab_sets),
+        available_set_set,
+    ) or selected_vocab_sets
+    direction = session.get("vocab_saved_direction", direction)
+    seconds_per_question = session.get("vocab_saved_seconds_per_question", seconds_per_question)
+    seconds_per_answer = session.get("vocab_saved_seconds_per_answer", seconds_per_answer)
+    num_questions = session.get("vocab_saved_num_questions", num_questions)
+    contestants = session.get("vocab_saved_contestants", contestants)
+
     saved_prefs = {
-        'selected_vocab_sets': session.get('vocab_saved_vocab_sets', [set_key for set_key, _, _ in vocab_set_list]),
-        'direction': session.get('vocab_saved_direction', 'spanish_to_german'),
-        'seconds_per_question': session.get('vocab_saved_seconds_per_question', 5),
-        'seconds_per_answer': session.get('vocab_saved_seconds_per_answer', 4),
-        'num_questions': session.get('vocab_saved_num_questions', 10),
-        'contestants': session.get('vocab_saved_contestants', [])
+        "selected_vocab_sets": selected_vocab_sets,
+        "direction": direction,
+        "seconds_per_question": seconds_per_question,
+        "seconds_per_answer": seconds_per_answer,
+        "num_questions": num_questions,
+        "contestants": contestants,
     }
     
     return render_template('vocab_options.html',
@@ -461,6 +673,18 @@ def vocab_save_settings():
     session['vocab_saved_seconds_per_answer'] = seconds_per_answer
     session['vocab_saved_num_questions'] = num_questions
     session['vocab_saved_contestants'] = contestant_names
+
+    _persist_section(
+        "vocab",
+        {
+            "selected_vocab_sets": selected_vocab_sets,
+            "direction": direction,
+            "seconds_per_question": seconds_per_question,
+            "seconds_per_answer": seconds_per_answer,
+            "num_questions": num_questions,
+            "contestants": contestant_names,
+        },
+    )
     
     return redirect(url_for('index'))
 
@@ -563,6 +787,18 @@ def vocab_start_quiz():
     session['vocab_saved_seconds_per_answer'] = seconds_per_answer
     session['vocab_saved_num_questions'] = num_questions
     session['vocab_saved_contestants'] = contestant_names
+
+    _persist_section(
+        "vocab",
+        {
+            "selected_vocab_sets": selected_vocab_sets,
+            "direction": direction,
+            "seconds_per_question": seconds_per_question,
+            "seconds_per_answer": seconds_per_answer,
+            "num_questions": num_questions,
+            "contestants": contestant_names,
+        },
+    )
     
     return redirect(url_for('vocab_run_quiz'))
 
